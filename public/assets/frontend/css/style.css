@@ -157,9 +157,10 @@ h6,
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: rgba(30, 67, 86, 0.902);
+    box-shadow: 0px 0px 30px rgb(125, 134, 156);
     transition: 0.3s;
+    border-radius: 5px;
 }
 .navbar .dropdown ul li {
     min-width: 200px;
@@ -168,7 +169,9 @@ h6,
     padding: 10px 20px;
     font-size: 14px;
     text-transform: none;
-    color: #1c3745;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
 }
 .navbar .dropdown ul a i {
     font-size: 12px;
@@ -1534,6 +1537,7 @@ section {
       transform: rotate(360deg);
     }
   }
+
 
 /*--------------------------------------------------------------
 # Blog
