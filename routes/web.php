@@ -8,6 +8,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -29,8 +30,14 @@ Route::get('/', [FrontendController::class, 'index']);
 Route::get('/', [FrontendController::class, 'showslider']);
 Route::get('/about', [FrontendController::class, 'showAbout']);
 Route::get('/gallery', FrontendController::class . '@showgallery')->name('gallery.show');
+
 // route profile sekolah
-Route::get('/profile', [FrontendController::class, 'profilesekolah']);
+// Route::get('/profile', [FrontendController::class, 'profilesekolah']);
+Route::get('/sejarah', [ProfilController::class, 'showSejarah'])->name('sejarah');
+Route::get('/visi-misi', [ProfilController::class, 'visimisi'])->name('visimisi');
+Route::get('/Program-unggulan', [ProfilController::class, 'showProgram'])->name('program');
+Route::get('/model-seragam', [ProfilController::class, 'modelSeragam'])->name('modelSeragam');
+Route::get('/kurikulum', [ProfilController::class, 'showKurikulum'])->name('kurikulum');
 
 Route::get('/blog', BlogController::class . '@index')->name('blog.index');
 Route::get('/blog/{slug}', BlogController::class . '@show');
