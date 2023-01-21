@@ -1,6 +1,7 @@
 <nav id="navbar" class="navbar">
     <ul>
-      <li><a class="active " href="/">Home</a></li>
+
+      <li><a class="{{ Route::is('dashboard.index') ? 'active' : '' }}" href="{{ Route('dashboard.index') }}">Home</a></li>
       <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
           <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
@@ -40,7 +41,7 @@
 
         </ul>
       </li>
-      <li><a href="{{ route('blog.index') }}">Article </a></li>
+      <li><a class="{{ Route::is('blog.index') ? 'active' : '' }}" href="{{ route('blog.index') }}">Article </a></li>
       <li><a href="{{ route('gallery.show') }}">Gallery</a></li>
       <li><a href="{{ url('about') }}">About</a></li>
       <li class="nav-item">

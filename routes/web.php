@@ -26,9 +26,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Start of the Public Routes
-Route::get('/', [FrontendController::class, 'index']);
-Route::get('/', [FrontendController::class, 'showslider']);
-Route::get('/about', [FrontendController::class, 'showAbout']);
+Route::get('/', [FrontendController::class, 'index'])->name('dashboard.index');
+Route::get('/', [FrontendController::class, 'showslider'])->name('dashboard.index');
+Route::get('/about', [FrontendController::class, 'showAbout'])->name('about');
 Route::get('/gallery', FrontendController::class . '@showgallery')->name('gallery.show');
 
 // route profile sekolah
