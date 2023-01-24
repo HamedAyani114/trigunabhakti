@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->text('photo')->nullable();
             $table->text('bio')->nullable();
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at')->default(now());
             $table->string('password');
             $table->string('role')->default('guest');
             $table->rememberToken();
