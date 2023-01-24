@@ -5,6 +5,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
@@ -30,6 +31,10 @@ Route::get('/', [FrontendController::class, 'index'])->name('dashboard.index');
 Route::get('/', [FrontendController::class, 'showslider'])->name('dashboard.index');
 Route::get('/about', [FrontendController::class, 'showAbout'])->name('about');
 Route::get('/gallery', FrontendController::class . '@showgallery')->name('gallery.show');
+
+Route::get('/fasilitas-kelas', FasilitasController::class . '@fasilitasKelas')->name('fasilitas.kelas');
+Route::get('/fasilitas-parkir', FasilitasController::class . '@fasilitasParkir')->name('fasilitas.parkir');
+
 
 // route profile sekolah
 // Route::get('/profile', [FrontendController::class, 'profilesekolah']);
@@ -160,3 +165,6 @@ Route::group(['middleware' => 'admin'], function () {
 });
 
 // End of the Admin Routes
+
+// route fasilitas
+
