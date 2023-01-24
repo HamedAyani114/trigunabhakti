@@ -7,6 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    {{-- favicon --}}
+    <link href="../assets/frontend/img/favicon.png" rel="icon">
+
     <title>Tri Guna Bhakti</title>
 
     <!-- Scripts -->
