@@ -20,6 +20,14 @@ class FrontendController extends Controller
         ];
         return view('frontend.gallery', $data);
     }
+    public function showFasilitas()
+    {
+        $data = [
+            'galleries' => Gallery::orderBy('created_at', 'desc')->paginate(15),
+            'albums' => Album::get(),
+        ];
+        return view('frontend.fasilitas.index', $data);
+    }
 
     public function showslider()
     {

@@ -26,8 +26,8 @@
       </li>
       <li class="dropdown"><a href="#"><span>Fasilitas</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-          <li><a href="#">Ruang kelas</a></li>
-          <li><a href="#">Tempat parkir</a></li>
+          <li><a href="{{route('fasilitas.kelas')}}">Ruang kelas</a></li>
+          <li><a href="{{route('fasilitas.parkir')}}">Tempat parkir</a></li>
           <li><a href="#">Musholla</a></li>
           <li><a href="#">Lapangan Voli, Futsal & Badminton</a></li>
           <li><a href="#">Aula</a></li>
