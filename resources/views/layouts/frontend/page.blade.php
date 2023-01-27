@@ -31,6 +31,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="magnific-popup/jquery.magnific-popup.js"></script>
 
+  {{-- Font Awesome --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- =======================================================
   * Template Name: Moderna - v4.8.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -79,18 +82,45 @@
     <section id="blog" class="blog">
       <div class="container aos-init aos-animate" data-aos="fade-up">
         <div class="row">
-
+          
           <!-- Start blog entries list -->
           @yield('content')
           <!-- End blog entries list -->
-
+          
         </div>
-
+        
       </div>
     </section><!-- End Blog Section -->
+    <section>
+      <div class="aos-init aos-animate" data-aos="fade-up">
+        {{-- <div class="row"> --}}
+          
+          <!-- Start blog entries list -->
+          
+          @yield('sejarah')
+          <!-- End blog entries list -->
+          
+          {{-- </div> --}}
+          
+        </div>
+      </section><!-- End Blog Section -->
+      
 
+      <section>
+        <div class="aos-init aos-animate" data-aos="fade-up">
+          {{-- <div class="row"> --}}
+            
+            <!-- Start blog entries list -->
+            @yield('kurikulum')
+            <!-- End blog entries list -->
+            
+            {{-- </div> --}}
+            
+          </div>
+        </section><!-- End Blog Section -->
+    
   </main><!-- End #main -->
-
+  
   <!-- ======= Footer ======= -->
   @include('layouts.frontend.footer')
   <!-- End Footer -->

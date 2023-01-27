@@ -157,7 +157,7 @@ h6,
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: rgba(30, 67, 86, 0.902);
+    background: #fff;
     /* box-shadow: 0px 0px 30px rgb(125, 134, 156); */
     border-radius: 5px;
     transition: 0.3s;
@@ -170,7 +170,7 @@ h6,
     padding: 10px 20px;
     font-size: 14px;
     text-transform: none;
-    color: #ffffff;
+    color: rgba(30, 67, 86, 0.902);
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
@@ -206,7 +206,6 @@ h6,
         left: -100%;
     }
 }
-
 /**
 * Mobile Navigation
 */
@@ -518,10 +517,14 @@ section {
 }
 .section-title h2 {
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 5S00;
+    color: #001973;
+    font-size: 32px;
+    font-weight: 500;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+    z-index: 2;
 }
 .section-title h2::before {
     content: "";
@@ -546,6 +549,23 @@ section {
 .section-title p {
     margin-bottom: 0;
 }
+.section-body {
+    font-size: 18px;
+    font-weight: 100;
+}
+.section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #001973;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -814,9 +834,178 @@ section {
         opacity: 0;
     }
 }
+
+/*--------------------------------------------------------------
+# Fasilitas
+--------------------------------------------------------------*/
+.fasilitas .container {
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    background: #fff;
+    /* max-height: fit-content; */
+    height: 480px;
+}
+.read-fasilitas {
+    background-color:rgb(17, 38, 48, 0.9); 
+    padding:6px 15px; 
+    font-size:10px;
+    color: #fff;
+    margin-left: 900px;
+    border-radius: 2px;
+}
+.read-fasilitas:hover{
+    background-color:rgba(205, 240, 255, 0.9); 
+}
+
+/*--------------------------------------------------------------
+# sejarah
+--------------------------------------------------------------*/
+.sejarah {
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/tes1.jpg") center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+  
+  @media (min-width: 1365px) {
+    .sejarah {
+      background-attachment: fixed;
+    }
+  }
+  
+  .sejarah h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .sejarah p {
+    color: #fff;
+  }
+  
+  .sejarah .cta-btn {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .sejarah .cta-btn:hover {
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+  
+/*--------------------------------------------------------------
+# kurikulum
+--------------------------------------------------------------*/
+.kurikulum {
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/tes.jpg") center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+  
+  @media (min-width: 1365px) {
+    .kurikulum {
+      background-attachment: fixed;
+    }
+  }
+  
+  .kurikulum h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .kurikulum p {
+    color: #fff;
+  }
+  
+  .kurikulum .cta-btn {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .kurikulum .cta-btn:hover {
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+/*--------------------------------------------------------------
+# Featured Services Section
+--------------------------------------------------------------*/
+.featured-services .service-item {
+    position: relative;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .featured-services .service-item .icon {
+    margin-right: 20px;
+  }
+  
+  .featured-services .service-item .icon i {
+    color: #001f8d;
+    font-size: 48px;
+    transition: 0.3s;
+  }
+  
+  .featured-services .service-item:hover .icon {
+    background: #fff;
+  }
+  
+  .featured-services .service-item:hover .icon i {
+    color: var(--color-primary);
+  }
+  
+  .featured-services .service-item .title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--color-secondary);
+    transition: 0.3s;
+  }
+  
+  .featured-services .service-item .description {
+    font-size: 15px;
+    color: #132848;
+    margin-bottom: 10px;
+  }
+  
+  .featured-services .service-item .readmore {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .featured-services .service-item .readmore i {
+    margin-left: 8px;
+  }
+  
+  .featured-services .service-item:hover .title,
+  .featured-services .service-item:hover .readmore,
+  .featured-services .service-item:hover .icon i {
+    color: var(--color-primary);
+  }
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+
 .features .row + .row {
     margin-top: 100px;
 }

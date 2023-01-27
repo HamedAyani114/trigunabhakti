@@ -32,17 +32,16 @@ Route::get('/', [FrontendController::class, 'showslider'])->name('dashboard.inde
 Route::get('/about', [FrontendController::class, 'showAbout'])->name('about');
 Route::get('/gallery', FrontendController::class . '@showgallery')->name('gallery.show');
 
-Route::get('/fasilitas-kelas', FasilitasController::class . '@fasilitasKelas')->name('fasilitas.kelas');
-Route::get('/fasilitas-parkir', FasilitasController::class . '@fasilitasParkir')->name('fasilitas.parkir');
+Route::get('/fasilitas-sekolah', FasilitasController::class . '@fasilitasSekolah')->name('fasilitas.sekolah');
+Route::get('/fasilitas', FasilitasController::class . '@showFasilitas')->name('fasilitas.show');
+// Route::get('/fasilitas-parkir', FasilitasController::class . '@fasilitasParkir')->name('fasilitas.parkir');
 
 
 // route profile sekolah
 // Route::get('/profile', [FrontendController::class, 'profilesekolah']);
-Route::get('/sejarah', [ProfilController::class, 'showSejarah'])->name('sejarah');
-Route::get('/visi-misi', [ProfilController::class, 'visimisi'])->name('visimisi');
-Route::get('/Program-unggulan', [ProfilController::class, 'showProgram'])->name('program');
+Route::get('/yayasan', [ProfilController::class, 'showYayasan'])->name('yayasan');
 Route::get('/model-seragam', [ProfilController::class, 'modelSeragam'])->name('modelSeragam');
-Route::get('/kurikulum', [ProfilController::class, 'showKurikulum'])->name('kurikulum');
+Route::get('/pendidikan', [ProfilController::class, 'showPendidikan'])->name('pendidikan');
 
 Route::get('/blog', BlogController::class . '@index')->name('blog.index');
 Route::get('/blog/{slug}', BlogController::class . '@show');
@@ -60,11 +59,9 @@ Route::get('/auth/{provider}/callback', 'Auth\SocialiteController@handleProvideC
 Route::get('/home', function () {
     if (Auth::user()->role == 'admin') {
         return redirect('/admin/dashboard');
-    } 
-    // elseif (Auth::user()->role == 'member') {
-    //     return redirect('/member/dashboard');
-    // } 
-    else {
+    } elseif (Auth::user()->role == 'member') {
+        return redirect('/member/dashboard');
+    } else {
         return redirect('/');
     }
 })->name('home');
@@ -72,20 +69,20 @@ Route::get('/home', function () {
 // Start of the Admin Routes
 // Start of the Admin and Member Routes
 
-// Route::group(['middleware' => 'auth'], function () {
-//     Route::prefix('admin')->group(function () {
-//         Route::prefix('todo')->group(function () {
-//             Route::get('/', [TodoController::class, 'index'])->name('todo.index');
-//             Route::get('/create', [TodoController::class, 'create'])->name('todo.create');
-//             Route::post('/store', [TodoController::class, 'store'])->name('todo.store');
-//             Route::get('/edit/{id}', [TodoController::class, 'edit'])->name('todo.edit');
-//             Route::get('/show/{id}', [TodoController::class, 'show'])->name('todo.show');
-//             Route::put('/update/{id}', [TodoController::class, 'update'])->name('todo.update');
-//             Route::delete('/delete/{id}', [TodoController::class, 'destroy'])->name('todo.destroy');
-//             Route::get('/status/{id}', [TodoController::class, 'status'])->name('todo.status');
-//         });
-//     });
-// });
+Route::group(['middleware' => 'auth'], function () {
+    Route::prefix('admin')->group(function () {
+        Route::prefix('todo')->group(function () {
+            Route::get('/', [TodoController::class, 'index'])->name('todo.index');
+            Route::get('/create', [TodoController::class, 'create'])->name('todo.create');
+            Route::post('/store', [TodoController::class, 'store'])->name('todo.store');
+            Route::get('/edit/{id}', [TodoController::class, 'edit'])->name('todo.edit');
+            Route::get('/show/{id}', [TodoController::class, 'show'])->name('todo.show');
+            Route::put('/update/{id}', [TodoController::class, 'update'])->name('todo.update');
+            Route::delete('/delete/{id}', [TodoController::class, 'destroy'])->name('todo.destroy');
+            Route::get('/status/{id}', [TodoController::class, 'status'])->name('todo.status');
+        });
+    });
+});
 
 // End of the Admin and Member Routes
 
@@ -103,13 +100,13 @@ Route::group(['middleware' => 'admin'], function () {
             Route::delete('/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy');
             Route::get('/status/{id}', [PostController::class, 'status'])->name('post.status');
         });
-        // Route::prefix('comment')->group(function () {
-        //     Route::get('/', [CommentsController::class, 'index'])->name('comments.index');
-        //     Route::get('/edit/{id}', [CommentsController::class, 'edit'])->name('comments.edit');
-        //     Route::put('/update/{id}', [CommentsController::class, 'update'])->name('comments.update');
-        //     Route::delete('/delete/{id}', [CommentsController::class, 'destroy'])->name('comments.destroy');
-        //     Route::get('/status/{id}', [CommentsController::class, 'status'])->name('comment.status');
-        // });
+        Route::prefix('comment')->group(function () {
+            Route::get('/', [CommentsController::class, 'index'])->name('comments.index');
+            Route::get('/edit/{id}', [CommentsController::class, 'edit'])->name('comments.edit');
+            Route::put('/update/{id}', [CommentsController::class, 'update'])->name('comments.update');
+            Route::delete('/delete/{id}', [CommentsController::class, 'destroy'])->name('comments.destroy');
+            Route::get('/status/{id}', [CommentsController::class, 'status'])->name('comment.status');
+        });
         Route::prefix('category')->group(function () {
             Route::get('/', [CategoryController::class, 'index'])->name('category.index');
             Route::get('/create', [CategoryController::class, 'create'])->name('category.create');

@@ -6,24 +6,16 @@ use Illuminate\Http\Request;
 
 class ProfilController extends Controller
 {
-    public function showSejarah()
+    public function showYayasan()
     {
         return view('frontend.profilesekolah.yayasan');
-    }
-    public function visiMisi()
-    {
-        return view('frontend.profilesekolah.visimisi');
-    }
-    public function showProgram()
-    {
-        return view('frontend.profilesekolah.program');
     }
     public function modelSeragam()
     {
         return view('frontend.profilesekolah.modelseragam');
     }
-    public function showKurikulum()
+    public function showPendidikan()
     {
-        return view('frontend.profilesekolah.kurikulum');
+        return view('frontend.profilesekolah.pendidikan');
     }
 }
