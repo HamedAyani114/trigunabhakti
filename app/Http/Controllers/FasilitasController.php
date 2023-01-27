@@ -8,7 +8,19 @@ use App\Models\Gallery;
 
 class FasilitasController extends Controller
 {
-    public function fasilitasKelas(){
-         return view('frontend.fasilitas.index');
+    public function showFasilitas(){
+        return view('frontend.fasilitas.index');
     }
+    public function fasilitasSekolah()
+    {
+        $data = [
+            'galleries' =>Gallery::select('title', 'picture', 'album_name', 'album_id')
+            ->join('albums', 'galleries.album_id', '=', 'albums.id')
+            ->where('album_name', 'Fasilitas')
+            ->get(),
+            'albums' => Album::get(),
+        ];
+        return view('frontend.fasilitas.fasilitas', $data);
+    }
+    
 }

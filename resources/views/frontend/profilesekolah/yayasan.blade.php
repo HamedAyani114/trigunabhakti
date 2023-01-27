@@ -1,8 +1,95 @@
 @extends('layouts.frontend.page')
 
-@section('content')
+@section('sejarah')
     <section id="sejarah" class="sejarah">
-            <h1 class="text-center">Sejarah</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate, fugiat doloribus maiores distinctio consequuntur unde architecto necessitatibus cum molestias qui amet incidunt facere quam est accusantium quasi, iusto pariatur obcaecati? Quibusdam impedit voluptates laudantium velit nisi, ab enim commodi quaerat numquam earum officiis facilis accusantium ea libero voluptate iusto provident veniam ut eum at aliquid nam hic illum explicabo. Obcaecati labore cumque iusto rem possimus debitis, laborum deleniti aut rerum. Soluta saepe, mollitia repellendus ex, commodi delectus sed dicta ratione nulla minus obcaecati cumque magnam placeat veritatis quo aperiam quis consectetur omnis quae excepturi culpa tenetur repudiandae error! Non ratione est molestias consequuntur quos sint nemo, voluptates minus similique porro at cumque illum eos temporibus natus assumenda provident aliquid adipisci inventore voluptatibus architecto nulla odio atque nobis! Laborum dolorem facere, officia nam quae ipsam repudiandae est molestias dignissimos debitis explicabo sint soluta corrupti asperiores suscipit voluptate, dolor exercitationem? Asperiores, saepe maiores, provident facere quo, voluptates illo neque at blanditiis quia nesciunt repellendus hic autem unde! Assumenda debitis, soluta culpa laboriosam quo nemo! Praesentium, doloremque magni. Nemo eveniet velit accusamus corrupti aperiam maxime ipsam quas ab magni voluptatem ipsum sapiente numquam sint qui ea, tempore totam rem veniam eius placeat harum! Eum unde, ea numquam quas excepturi consequuntur magnam, dolores expedita nesciunt quod autem? Praesentium ipsum, unde quia nihil sit impedit beatae nulla sint, modi, obcaecati possimus officiis culpa. Quidem tenetur cumque asperiores in possimus ut aliquam aspernatur eos illo odit ipsum architecto, magnam esse perferendis, reprehenderit hic dolores minima vel recusandae non magni rem repudiandae. Ut ab temporibus quas necessitatibus mollitia rem, sunt voluptatem in, magnam dolorem alias fugiat a dicta similique molestiae. Iure nobis asperiores dolores officia fugiat a ratione voluptas? Dolore consectetur minima neque labore animi ut voluptatibus quidem voluptatem corporis nulla provident hic accusamus autem dignissimos velit sed, nemo deleniti repellendus eum in magni illum! Dicta eos sit sapiente sint nostrum laborum sequi vero aut debitis recusandae. Sit iste, voluptate, molestias sapiente aliquam ipsum consequatur tenetur recusandae exercitationem porro voluptatibus delectus ullam architecto rerum totam! Officiis temporibus quidem autem necessitatibus sunt, ad ipsum commodi odio minus quasi voluptatem repellat! Modi numquam laborum sint, illo quidem necessitatibus id maxime voluptatum est cupiditate accusamus aperiam. Autem quasi reiciendis est ipsam provident dolorum consectetur magnam necessitatibus in placeat exercitationem beatae quidem atque minima aliquid harum, nihil aspernatur commodi non rerum illo cumque, facilis dolorem voluptas? Blanditiis provident excepturi sed assumenda numquam cupiditate ea dolores doloremque hic, animi deserunt voluptatum eaque delectus sapiente suscipit adipisci pariatur, dolor inventore quas, voluptates eligendi veniam voluptatem perferendis recusandae. Architecto consectetur suscipit exercitationem consequuntur ducimus similique dolor temporibus debitis provident hic veritatis impedit, at distinctio! Sint consectetur facere quia voluptatem quo ipsum. Expedita eligendi accusantium itaque, sit excepturi tempore laudantium. Pariatur assumenda quasi sunt? Deleniti, nesciunt ipsum aliquam fugiat architecto, tempore nobis facere temporibus nam ipsam sunt in atque distinctio, asperiores doloremque adipisci? Dignissimos, libero, cum inventore modi facere reprehenderit, vel est laboriosam ipsa minima aliquam asperiores illum ex suscipit. Repudiandae at deserunt maiores.
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h3>Sejarah</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="cta-btn" href="#">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>    
+      </section>
+@endsection
+
+@section('kurikulum')
+<section id="kurikulum" class="kurikulum">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h3>Kurikulum</h3>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="cta-btn" href="#">Baca Selengkapnya</a>
+      </div>
+    </div>
+  </div>    
+</section>
+@endsection
+
+@section('content')
+    <br>
+    <section id="visimisi" class="visimisi section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Visi Misi</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="icon-box">
+                        <h4 class="title text-center">Visi</h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam est quam temporibus numquam, fugit minima reprehenderit! Saepe eius nostrum nesciunt debitis placeat illo accusamus mollitia obcaecati! Veritatis quasi rerum expedita aperiam, adipisci, optio eum voluptates illo ipsa quae sit illum architecto eius ratione maxime vel dignissimos? Reiciendis delectus obcaecati ullam ducimus fugiat cumque blanditiis optio facere excepturi eligendi odit, est velit voluptate recusandae. Delectus dicta repellat saepe dolorum minima magnam cum maxime eligendi amet veritatis eaque rem optio, natus maiores earum sed facere aut eos nisi molestias reprehenderit. Libero ut autem incidunt sint id sed! Soluta earum laborum doloribus?</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="icon-box">
+                        <h4 class="title text-center">Misi</h4>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam est quam temporibus numquam, fugit minima reprehenderit! Saepe eius nostrum nesciunt debitis placeat illo accusamus mollitia obcaecati! Veritatis quasi rerum expedita aperiam, adipisci, optio eum voluptates illo ipsa quae sit illum architecto eius ratione maxime vel dignissimos? Reiciendis delectus obcaecati ullam ducimus fugiat cumque blanditiis optio facere excepturi eligendi odit, est velit voluptate recusandae. Delectus dicta repellat saepe dolorum minima magnam cum maxime eligendi amet veritatis eaque rem optio, natus maiores earum sed facere aut eos nisi molestias reprehenderit. Libero ut autem incidunt sint id sed! Soluta earum laborum doloribus?</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="programUnggulan" class="programUnggulan">
+        <div class="section-title">
+            <h2>Program Unggulan</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <section id="featured-services" class="featured-services">
+            <div class="container">
+      
+              <div class="row gy-4">
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+                  <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+                  <div>
+                    <h4 class="title">English Class</h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                  </div>
+                </div>
+                <!-- End Service Item -->
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+                  <div>
+                    <h4 class="title">Kelas Mengaji</h4>
+                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                  </div>
+                </div><!-- End Service Item -->
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                  <div>
+                    <h4 class="title">Pramuka</h4>
+                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+                </div><!-- End Service Item -->
+      
+              </div>
+      
+            </div>
+          </section>
     </section>
 @endsection

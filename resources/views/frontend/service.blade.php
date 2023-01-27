@@ -6,7 +6,7 @@
                     <a href="/blog/{{ $srv->slug }}">
                         <div class="icon-box icon-box-pink">
                             @if ($srv->title == 'SD Tri Guna Bhakti')
-                            <div class="icon"><img src="{{ asset('images/logo/sd.png') }}" class="img-circle elevation-2" alt="Logo" width="40"></i></div>
+                            <div class="icon"><img src="{{ asset('images/logo/sd.png') }}"  class="img-circle elevation-2" alt="Logo" width="40"></i></div>
                             @elseif ($srv->title == 'SMP Tri Guna Bhakti')
                             <div class="icon"><img src="{{ asset('images/logo/smp.png') }}" class="img-circle elevation-2" alt="Logo" width="40"></i></div>
                             @elseif ($srv->title == 'SMK Tri Guna Bhakti')
