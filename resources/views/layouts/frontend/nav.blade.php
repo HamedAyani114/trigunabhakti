@@ -7,12 +7,12 @@
           <li><a href="{{ route('yayasan') }}">Profil Yayasan</a></li>
           <li class="dropdown"><a href="#"><span>Pendidikan</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="#" style="margin-right: 120px"><img src="{{ asset('images/logo/sd.png') }}" class="img-circle elevation-2" alt="Logo" width="10">SD</a></li>
-              <li><a href="#" style="margin-right: 110px"><img src="{{ asset('images/logo/smp.png') }}" class="img-circle elevation-2" alt="Logo" width="10">SMP</a></li>
-              <li><a href="#" style="margin-right: 110px"><img src="{{ asset('images/logo/smk.png') }}" class="img-circle elevation-2" alt="Logo" width="10">SMK</a></li>
+              <li><a href="#" style="margin-right: 110px"><img src="{{ asset('images/logo/sd.png') }}" class="img-circle elevation-2" alt="Logo" width="10">  SD</a></li>
+              <li><a href="#" style="margin-right: 100px"><img src="{{ asset('images/logo/smp.png') }}" class="img-circle elevation-2" alt="Logo" width="10"> SMP</a></li>
+              <li><a href="#" style="margin-right: 100px"><img src="{{ asset('images/logo/smk.png') }}" class="img-circle elevation-2" alt="Logo" width="10"> SMK</a></li>
             </ul>
           </li>
-          <li><a href="#">Ekstrakulikuler</a></li>
+          <li><a href="{{ route('ekstrakulikuler') }}">Ekstrakulikuler</a></li>
           
         </ul>
       </li>

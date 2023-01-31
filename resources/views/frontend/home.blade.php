@@ -158,7 +158,62 @@
         </section> --}}
         <!-- End Features Section -->
 
-
+    {{-- Prestasi Section --}}
+    <section id="prestasi" class="prestasi">
+      <div id="slider">
+        <header class="section-title text-center">
+          <h2>Prestasi</h2>
+          <p>Berikut Prestasi yang diraih oleh murid berprestasi di Yayasan Tri Guna Bhakti</p>
+        </header>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+                       <h2>Slide 1</h2>
+                       <p>Content for Slide 1</p>
+                       <img src="assets/img/portfolio/portfolio-3.jpg" alt="" width="600" height="400">
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                       <h2>Slide 2</h2>
+                       <p>Content for Slide 2</p>
+                       <img src="assets/img/portfolio/portfolio-2.jpg" alt="" width="600" height="400">
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                   <div class="slide-content">
+                      <img src="assets/img/portfolio/portfolio-1.jpg" alt="" width="600" height="400">
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                      <img src="assets/img/about.jpg" alt="" width="600" height="400">
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+    </section>
+    {{-- End Prestasi Section --}}
         <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
@@ -170,6 +225,22 @@
   
           <div class="row">
   
+            <div class="col-lg-12 mt-4 ">
+              <div class="member d-flex align-items-start" style="width: 600px; " data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-lg-6 mt-4">
               <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>

@@ -10,9 +10,9 @@ class ProfilController extends Controller
     {
         return view('frontend.profilesekolah.yayasan');
     }
-    public function modelSeragam()
+    public function showEkstrakulikuler()
     {
-        return view('frontend.profilesekolah.modelseragam');
+        return view('frontend.profilesekolah.ekstrakulikuler');
     }
     public function showPendidikan()
     {

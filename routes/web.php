@@ -40,7 +40,7 @@ Route::get('/fasilitas', FasilitasController::class . '@showFasilitas')->name('f
 // route profile sekolah
 // Route::get('/profile', [FrontendController::class, 'profilesekolah']);
 Route::get('/yayasan', [ProfilController::class, 'showYayasan'])->name('yayasan');
-Route::get('/model-seragam', [ProfilController::class, 'modelSeragam'])->name('modelSeragam');
+Route::get('/ekstrakulikuler', [ProfilController::class, 'showEkstrakulikuler'])->name('ekstrakulikuler');
 Route::get('/pendidikan', [ProfilController::class, 'showPendidikan'])->name('pendidikan');
 
 Route::get('/blog', BlogController::class . '@index')->name('blog.index');

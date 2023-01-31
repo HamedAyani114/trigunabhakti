@@ -22,6 +22,7 @@
   <link href="../assets/frontend/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/frontend/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/frontend/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/frontend/vendor/swiper1/swiper-bundle.min.css" rel="stylesheet">
 
 
 
@@ -138,6 +139,8 @@
   <script src="../assets/frontend/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="../assets/frontend/vendor/php-email-form/validate.js"></script>
   <script src="../assets/frontend/magnific-popup/jquery.magnific-popup.min.js?v=1"></script>
+  <script src="../assets/frontend/vendor/swiper1/swiper-bundle.min.js"></script>
+
   <!-- Template Main JS File -->
   <script src="../assets/frontend/js/main.js"></script>
 
@@ -160,6 +163,34 @@
 		    }
             });
         });
+
+   /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40
+      },
+
+      1200: {
+        slidesPerView: 3,
+      }
+    }
+  });
 </script>
 
 </body></html>
