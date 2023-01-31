@@ -849,16 +849,15 @@ section {
 .fasilitas .container {
     box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
     background: #fff;
-    /* max-height: fit-content; */
-    height: 480px;
 }
 .read-fasilitas {
     background-color:rgb(17, 38, 48, 0.9); 
     padding:6px 15px; 
     font-size:10px;
     color: #fff;
-    margin-left: 900px;
+    /* margin-left: 900px; */
     border-radius: 2px;
+    width: 100px;
 }
 .read-fasilitas:hover{
     background-color:rgba(205, 240, 255, 0.9); 
@@ -1563,7 +1562,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-/* .team {
+.team {
     background: #fff;
     padding-bottom: 30px;
 }
@@ -1621,12 +1620,12 @@ section {
     line-height: 26px;
     color: #666;
 }
-.team .member:hover .social {
+/* .team .member:hover .social {
     bottom: 0;
     opacity: 1;
     transition: bottom ease-in-out 0.4s;
-}
-.team .member:hover .social a,
+} */
+/* .team .member:hover .social a,
 .team .member:hover .social i {
     line-height: 0;
     font-size: 18px;

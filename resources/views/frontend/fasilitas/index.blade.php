@@ -7,10 +7,10 @@
                 <h2>Fasilitas</h2>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <img src="{{ asset('assets/frontend/img/tes1.jpg') }}" alt="" width="500">
+                <div class="col-lg-6 col-md-12">
+                    <img src="{{ asset('assets/frontend/img/tes1.jpg') }}" alt="" width="100%">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="section-body">
                         <ul>
                             <li>Tempat parkir</li>
@@ -29,7 +29,10 @@
                     </div>
                 </div>
             </div>
-            <a class="read-fasilitas" href="{{ route('fasilitas.sekolah') }}" >Read More ...</a>
+            <div class="row"> 
+                <div class="col-lg-12">
+                    <a class="read-fasilitas" href="{{ route('fasilitas.sekolah') }}" >Read More ...</a>
+                </div>
         </div>
     </section>
 @endsection
