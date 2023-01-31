@@ -1016,10 +1016,11 @@ section {
 .testimonials .testimonial-item {
     box-sizing: content-box;
     padding: 30px;
-    margin: 40px 30px;
-    box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+    margin: 4px 3px;
+    box-shadow: 0px 10px 10px rgba(1, 42, 112, 0.267);
     background: #fff;
-    min-height: 320px;
+    min-height: 30px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1061,7 +1062,7 @@ section {
   }
   
   .testimonials .swiper-pagination {
-    margin-top: 20px;
+    margin-top: 2px;
     position: relative;
   }
   
@@ -1557,7 +1558,7 @@ section {
 }
 .portfolio-details .portfolio-description p {
     padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team

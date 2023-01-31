@@ -22,7 +22,7 @@
   <link href="../assets/frontend/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/frontend/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/frontend/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/frontend/vendor/swiper1/swiper-bundle.min.css" rel="stylesheet">
+  {{-- <link href="../assets/frontend/vendor/swiper1/swiper-bundle.min.css" rel="stylesheet"> --}}
 
 
 

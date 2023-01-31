@@ -77,7 +77,7 @@
                     </div>
                     <!-- End testimonial item -->
                 </div>
-                <div class="swiper-pagination"></div>
+                <div style="margin-top: -50px" class="swiper-pagination"></div>
                 </div>
               </div>
             </div>
