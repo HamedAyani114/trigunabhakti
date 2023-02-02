@@ -33,7 +33,9 @@
                             <li class="active"><a class="nav-link" href="{{ route('gallery.index') }}">Gallery</a></li>
                         </ul>
                         </li>
+                        
                 </li>
+                <li><a class="nav-link" href="{{ route('pegawai.index') }}"><i class="fas fa-chalkboard-teacher"></i> <span>Manage pegawai</span></a></li>
                     <li><a class="nav-link" href="{{ route('user.index') }}"><i class="fas fa-user"></i> <span>Manage User</span></a></li>
                     {{-- <li><a class="nav-link" href="{{ route('setting.index')}}"><i class="fas fa-cogs"></i> <span>Settings</span></a></li> --}}
                     @endif

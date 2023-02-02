@@ -8,6 +8,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\TodoController;
@@ -67,7 +68,6 @@ Route::get('/home', function () {
 })->name('home');
 
 // Start of the Admin Routes
-// Start of the Admin and Member Routes
 
 Route::group(['middleware' => 'auth'], function () {
     Route::prefix('admin')->group(function () {
@@ -100,6 +100,16 @@ Route::group(['middleware' => 'admin'], function () {
             Route::delete('/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy');
             Route::get('/status/{id}', [PostController::class, 'status'])->name('post.status');
         });
+
+        Route::prefix('pegawai')->group(function () {
+            Route::get('/', [PegawaiController::class, 'index'])->name('pegawai.index');
+            Route::get('/create', [PegawaiController::class, 'create'])->name('pegawai.create');
+            Route::post('/store', [PegawaiController::class, 'store'])->name('pegawai.store');
+            Route::get('/edit/{id}', [PegawaiController::class, 'edit'])->name('pegawai.edit');
+            Route::put('/update/{id}', [PegawaiController::class, 'update'])->name('pegawai.update');
+            Route::delete('/delete/{id}', [PegawaiController::class, 'destroy'])->name('pegawai.destroy');
+        });
+
         Route::prefix('comment')->group(function () {
             Route::get('/', [CommentsController::class, 'index'])->name('comments.index');
             Route::get('/edit/{id}', [CommentsController::class, 'edit'])->name('comments.edit');
