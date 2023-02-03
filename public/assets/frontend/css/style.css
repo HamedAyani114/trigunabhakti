@@ -162,6 +162,7 @@ h6,
     border-radius: 5px;
     transition: 0.3s;
     border-radius: 5px;
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
 }
 .navbar .dropdown ul li {
     min-width: 200px;
@@ -839,8 +840,72 @@ section {
     }
     100% {
         transform: scale(1, 1);
+        
         opacity: 0;
     }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Profil sd, smp, smk
+--------------------------------------------------------------*/
+/* SD */
+.bg-sd{
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('../img/bg-sd.JPG') center center;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 5px 25px 0 rgba(118, 118, 118, 0.6);
+
+}
+.sd-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.sd-title h2{
+    color: #fff;
+    margin: 80px;
+    margin-bottom: 30px;
+    margin-left: -50%;
+    font-size: 48px;
+    font-weight: 700;
+}
+.sd-title h4{
+    color: #fff;
+    margin-bottom: 30px;
+    margin-left: -50%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-read-me{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #68a4c4;
+    margin-left: -50%;
+}
+.btn-read-me:hover {
+    background: #68a4c4;
+    color: #fff;
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -1194,6 +1259,13 @@ section {
 /*--------------------------------------------------------------
 # Tetstimonials
 --------------------------------------------------------------*/
+.ekskul{
+
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/Prestasi/Prestasi\ Ekstrakulikuler.jpg") center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
 .testimonials {
     padding: 60px 0;
 }
@@ -2499,7 +2571,7 @@ section {
     color: #a2cce3;
 }
 
-/* Coruousel */
+/* Prestasi */
 
 #slider {
     margin: 0 auto;
@@ -2554,7 +2626,7 @@ section {
     color: #fff;
   }
   #slides .slide_1 {
-    background: #00171F;
+    background:url("../img/Prestasi/Prestasi\ SMK.jpg") center center;
   }
   #slides .slide_2 {
     background: #003459;
@@ -2577,7 +2649,7 @@ section {
     display: none;
     width: 50px;
     height: 50px;
-    opacity: .4;
+    opacity: 0.4;
   }
   #controls label:hover {
     opacity: 1;

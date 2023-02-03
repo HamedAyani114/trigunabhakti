@@ -11,6 +11,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -35,7 +36,11 @@ Route::get('/gallery', FrontendController::class . '@showgallery')->name('galler
 
 Route::get('/fasilitas-sekolah', FasilitasController::class . '@fasilitasSekolah')->name('fasilitas.sekolah');
 Route::get('/fasilitas', FasilitasController::class . '@showFasilitas')->name('fasilitas.show');
-// Route::get('/fasilitas-parkir', FasilitasController::class . '@fasilitasParkir')->name('fasilitas.parkir');
+
+// route profile sd smp smk
+Route::get('/sd', [SchoolController::class, 'showSD'])->name('sd');
+Route::get('/smp', [SchoolController::class, 'showSMP'])->name('smp');
+Route::get('/smk', [SchoolController::class, 'showSMK'])->name('smk');
 
 
 // route profile sekolah

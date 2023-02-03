@@ -11,7 +11,6 @@
                   <h2>EKSTRAKULIKULER</h2>
                   <p>Berikut ekstrakulikuler yang ada di Yayasan Tri Guna Bhakti</p>
                 </header>
-        
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
                   <div class="swiper-wrapper">
         

@@ -46,9 +46,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="/"><span>Tri Guna Bhakti</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/frontend/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 class="text-light"><a href="/"><span><img src="{{ asset('images/logo/lg.png')}}" alt="" class="img-fluid" width="45" height="70"></a>  TRI GUNA BHAKTI</span></a></h1>
       </div>
     <!-- .navbar -->
     @include('layouts.frontend.nav')

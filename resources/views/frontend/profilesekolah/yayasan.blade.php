@@ -29,7 +29,27 @@
 @endsection
 
 @section('content')
-    <br>
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="300">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 video-box">
+                    <img src="{{ asset('assets/frontend/img/about.jpg') }}" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                        <h4 class="title"><a href="">Sambutan Kepala Sekolah</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi corrupti vitae, ratione nihil deleniti totam ab soluta nesciunt neque nemo explicabo tenetur tempora nostrum voluptates aliquid magni adipisci sed.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
     <section id="visimisi" class="visimisi section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">

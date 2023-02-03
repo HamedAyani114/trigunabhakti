@@ -21,6 +21,17 @@ class FrontendController extends Controller
         return view('frontend.gallery', $data);
     }
 
+    public function prestasiSekolah()
+    {
+        $data = [
+            'galleries' =>Gallery::select('title', 'picture', 'album_name', 'album_id')
+            ->join('albums', 'galleries.album_id', '=', 'albums.id')
+            ->where('album_name', 'Prestasi')
+            ->get(),
+            'albums' => Album::get(),
+        ];
+        return view('frontend.home', $data);
+    }
     public function showslider()
     {
         $data = [

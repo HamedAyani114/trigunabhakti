@@ -60,7 +60,7 @@
   <main id="main">
 
     <!-- ======= Blog Breadcrumb ======= -->
-    <section class="breadcrumbs">
+    {{-- <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
@@ -71,9 +71,21 @@
           </ol>
         </div>
       </div>
-    </section>
+    </section> --}}
     <!-- End Blog Breadcrumb -->
-
+    <section class="sd bg-sd">
+      <div class="aos-init aos-animate" data-aos="fade-up">
+        {{-- <div class="row"> --}}
+          
+          <!-- Start blog entries list -->
+          
+          @yield('sd')
+          <!-- End blog entries list -->
+          
+          {{-- </div> --}}
+          
+        </div>
+      </section><!-- End Blog Section -->
     <!-- ======= Blog Entry ======= -->
     <section id="blog" class="blog">
       <div class="container aos-init aos-animate" data-aos="fade-up">

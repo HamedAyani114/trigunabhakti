@@ -4,15 +4,15 @@
       <li><a class="{{ Route::is('dashboard.index') ? 'active' : '' }}" href="{{ Route('dashboard.index') }}">Home</a></li>
       <li class="dropdown"><a href="{{ route('yayasan') }}"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-          <li><a href="{{ route('yayasan') }}">Profil Yayasan</a></li>
-          <li class="dropdown"><a href="#"><span>Pendidikan</span> <i class="bi bi-chevron-right"></i></a>
+          <li><a href="{{ route('yayasan') }}"><i class="fa-solid fa-school"></i><span style="margin-right: 20%">Profil Yayasan</span></a></li>
+          <li class="dropdown"><a href="#"><i class="fa-solid fa-book-open-reader"></i><span style="margin-right: 15%">Pendidikan</span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-              <li><a href="#" style="margin-right: 110px"><img src="{{ asset('images/logo/sd.png') }}" class="img-circle elevation-2" alt="Logo" width="10">  SD</a></li>
-              <li><a href="#" style="margin-right: 100px"><img src="{{ asset('images/logo/smp.png') }}" class="img-circle elevation-2" alt="Logo" width="10"> SMP</a></li>
-              <li><a href="#" style="margin-right: 100px"><img src="{{ asset('images/logo/smk.png') }}" class="img-circle elevation-2" alt="Logo" width="10"> SMK</a></li>
+              <li><a href="{{ route('sd') }}" style="margin-right: 110px"><img src="{{ asset('images/logo/sd.png') }}" class="img-circle elevation-2" alt="Logo" width="10">  SD</a></li>
+              <li><a href="{{ route('smp') }}" style="margin-right: 100px"><img src="{{ asset('images/logo/smp.png') }}" class="img-circle elevation-2" alt="Logo" width="10"> SMP</a></li>
+              <li><a href="{{ route('smk') }}" style="margin-right: 100px"><img src="{{ asset('images/logo/smk.png') }}" class="img-circle elevation-2" alt="Logo" width="10"> SMK</a></li>
             </ul>
           </li>
-          <li><a href="{{ route('ekstrakulikuler') }}">Ekstrakulikuler</a></li>
+          <li><a href="{{ route('ekstrakulikuler') }}"><i class="fa-solid fa-person-walking"></i><span style="margin-right: 20%"> Ekstrakulikuler</span></a></li>
           
         </ul>
       </li>
