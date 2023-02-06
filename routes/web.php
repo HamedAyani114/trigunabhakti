@@ -48,6 +48,7 @@ Route::get('/smk', [SchoolController::class, 'showSMK'])->name('smk');
 Route::get('/yayasan', [ProfilController::class, 'showYayasan'])->name('yayasan');
 Route::get('/ekstrakulikuler', [ProfilController::class, 'showEkstrakulikuler'])->name('ekstrakulikuler');
 Route::get('/pendidikan', [ProfilController::class, 'showPendidikan'])->name('pendidikan');
+Route::get('/sejarah', [ProfilController::class, 'showSejarah'])->name('sejarah');
 
 Route::get('/blog', BlogController::class . '@index')->name('blog.index');
 Route::get('/blog/{slug}', BlogController::class . '@show');

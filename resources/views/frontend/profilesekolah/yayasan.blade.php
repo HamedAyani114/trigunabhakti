@@ -7,7 +7,7 @@
             <div class="col-lg-8 text-center">
               <h3>Sejarah</h3>
               <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Baca Selengkapnya</a>
+              <a class="cta-btn" href="{{ route('sejarah') }}">Baca Selengkapnya</a>
             </div>
           </div>
         </div>    
@@ -21,7 +21,7 @@
       <div class="col-lg-8 text-center">
         <h3>Kurikulum</h3>
         <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Baca Selengkapnya</a>
+        <a class="cta-btn" href="{{ route('pendidikan') }}">Baca Selengkapnya</a>
       </div>
     </div>
   </div>    
@@ -50,7 +50,7 @@
 
         </div>
     </section><!-- End Why Us Section -->
-    <section id="visimisi" class="visimisi section-bg">
+    <section id="visimisi-yys" class="visimisi-yys section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>Visi Misi</h2>

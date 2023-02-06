@@ -525,9 +525,9 @@ section {
     padding-bottom: 30px;
 }
 .section-title h2 {
-    font-size: 28px;
-    font-weight: 5S00;
-    color: #001973;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(30, 67, 86, 0.902);
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -852,13 +852,52 @@ section {
 # Profil sd, smp, smk
 --------------------------------------------------------------*/
 /* SD */
-.bg-sd{
+.main-sd{
     background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('../img/bg-sd.JPG') center center;
     background-size: cover;
     height: 100%;
     box-shadow: 0 5px 25px 0 rgba(118, 118, 118, 0.6);
+    margin-top: -4.5%;
+}
+.main-smp{
+    background: linear-gradient(rgba(14, 2S9, 52, 0.6), rgba(14, 29, 52, 0.8)), url('../img/bg-smp.jpg') center center;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 5px 25px 0 rgba(118, 118, 118, 0.6);
+    margin-top: -4.5%;
+}
+.main-smk{
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('../img/bg-smk.jpg') center center;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 5px 25px 0 rgba(118, 118, 118, 0.6);
+    margin-top: -4.5%;
+}
+
+#logo .container{
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    background: #ffffff;
 
 }
+#logo .container .logo-title h2{
+    text-align: start;
+    padding: 100px;
+    margin: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+}
+#logo .container .logo-title h3{
+    text-align: start;
+    padding: 100px 30px;
+    margin: 30px;
+    font-size: 38px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
 .sd-title{
     display: flex;
     justify-content: center;
@@ -872,20 +911,24 @@ section {
 }
 .sd-title h2{
     color: #fff;
-    margin: 80px;
+    /* margin: 80px; */
     margin-bottom: 30px;
-    margin-left: -50%;
+    /* margin-left: -50%; */
     font-size: 48px;
     font-weight: 700;
+    padding-top: 120px;
+    padding-left: 100px;
 }
 .sd-title h4{
     color: #fff;
     margin-bottom: 30px;
-    margin-left: -50%;
+    /* margin-left: -50%; */
     font-size: 20px;
     font-weight: 600;
+    padding-left: 100px;
 }
 .btn-read-me{
+    padding-left: 100px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -900,13 +943,83 @@ section {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     border: 2px solid #68a4c4;
-    margin-left: -50%;
+    margin-left: 100px;
 }
 .btn-read-me:hover {
     background: #68a4c4;
     color: #fff;
     text-decoration: none;
 }
+
+/* visimisi */
+#visimisi .container{
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    background: #ffffff;
+}
+#visimisi .visimisi-title {
+    padding: 10px;
+    margin-left: 5%;
+}
+#visimisi .visimisi-title h1 {
+    color: rgba(30, 67, 86, 0.902);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+#visimisi .visimisi-title h2 {
+    color: rgba(30, 67, 86, 0.902);
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.visimisi{
+    padding: 30px;
+    border: 2px solid rgba(30, 67, 86, 0.902);
+    border-radius: 80px;
+    color: #000000;
+    font-size: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+}
+.visimisi:hover{
+    border: 2px solid rgba(39, 88, 113, 0.902);
+    box-shadow: 0 5px 20px 0 rgba(148, 149, 149, 0.6);
+}
+
+/*data guru */
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq .accordion-collapse {
+    border: 0;
+  }
+  
+  .faq .accordion-button {
+    padding: 15px 15px 20px 0;
+    font-weight: 600;
+    border: 0;
+    font-size: 18px;
+    color: #444444;
+    text-align: left;
+  }
+  
+  .faq .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .faq .accordion-button:not(.collapsed) {
+    background: none;
+    color: #4154f1;
+    border-bottom: 0;
+  }
+  
+  .faq .accordion-body {
+    padding: 0 0 25px 0;
+    border: 0;
+  }
+
 
 /*--------------------------------------------------------------
 # Fasilitas
@@ -936,6 +1049,7 @@ section {
     background-size: cover;
     padding: 100px 0;
 }
+
   
   @media (min-width: 1365px) {
     .sejarah {
@@ -2627,15 +2741,23 @@ section {
   }
   #slides .slide_1 {
     background:url("../img/Prestasi/Prestasi\ SMK.jpg") center center;
-  }
-  #slides .slide_2 {
-    background: #003459;
-  }
-  #slides .slide_3 {
-    background: #007EA7;
-  }
-  #slides .slide_4 {
-    background: #00A8E8;
+    background-size: cover;
+}
+#slides .slide_2 {
+    background:url("../img/Prestasi/Prestasi\ SD-4.jpg") center center;
+    background-size: cover;
+
+}
+#slides .slide_3 {
+    background:url("../img/Prestasi/Prestasi\ SD-3.jpg") center center;
+    background-size: cover;
+
+}
+#slides .slide_4 {
+    background:url("../img/Prestasi/Prestasi\ SMP-1.jpg") center center;
+    background-size: cover;
+
+    
   }
   #controls {
     margin: -180px 0 0 0;
@@ -2645,7 +2767,7 @@ section {
     position: relative;
   }
   #controls label {
-    transition: opacity 0.2s ease-out;
+    transition: opacity 0.1s ease-out;
     display: none;
     width: 50px;
     height: 50px;
@@ -2658,21 +2780,21 @@ section {
   #slide2:checked ~ #controls label:nth-child(3),
   #slide3:checked ~ #controls label:nth-child(4),
   #slide4:checked ~ #controls label:nth-child(1) {
-    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    background: url('../img/font/circle-chevron-right-solid.svg') no-repeat;
     float:right;
-    margin: 0 -50px 0 0;
+    margin: 0 -10px 0 0;
     display: block;
-    background: #012970;
+    /* background: #012a702f; */
   }
-  #slide1:checked ~ #controls label:nth-last-child(2),
-  #slide2:checked ~ #controls label:nth-last-child(3),
-  #slide3:checked ~ #controls label:nth-last-child(4),
-  #slide4:checked ~ #controls label:nth-last-child(1) {
-    background: url(https://icons8.com/icon/15820/chevron-left) no-repeat;
+  #slide1:checked ~ #controls label:nth-last-child(1),
+  #slide2:checked ~ #controls label:nth-last-child(4),
+  #slide3:checked ~ #controls label:nth-last-child(3),
+  #slide4:checked ~ #controls label:nth-last-child(2) {
+    background:  url('../img/font/circle-chevron-left-solid.svg') no-repeat;
     float:left;
-    margin: 0 0 0 -50px;
+    margin: 0 0 0 -10px;
     display: block;
-    background: #012970;
+    /* background: #012a702e; */
   }
   #bullets {
     margin: 150px 0 0;

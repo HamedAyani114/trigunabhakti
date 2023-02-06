@@ -19,5 +19,4 @@ class FasilitasController extends Controller
         return view('frontend.fasilitas.index', $data);
     }
 
-    
 }

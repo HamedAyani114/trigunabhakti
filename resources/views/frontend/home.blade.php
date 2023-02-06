@@ -174,27 +174,27 @@
               <div class="inner">
                  <div class="slide slide_1">
                     <div class="slide-content">
-                       <h2>Slide 1</h2>
-                       <p>Content for Slide 1</p>
-                       <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SMK.jpg') }}" alt="" width="600" height="400">
+                       {{-- <h2>Slide 1</h2> --}}
+                       {{-- <p>Content for Slide 1</p> --}}
+                       {{-- <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SMK.jpg') }}" alt="" width="500" height="400"> --}}
                     </div>
                  </div>
                  <div class="slide slide_2">
                     <div class="slide-content">
-                       <h2>Slide 2</h2>
-                       <p>Content for Slide 2</p>
-                       <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SD-1.jpg') }}" alt="" width="600" height="400">
+                       {{-- <h2>Slide 2</h2> --}}
+                       {{-- <p>Content for Slide 2</p> --}}
+                       {{-- <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SD-4.jpg') }}" alt="" width="500" height="400"> --}}
 
                     </div>
                  </div>
                  <div class="slide slide_3">
                    <div class="slide-content">
-                    <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SD-2.jpg') }}" alt="" width="600" height="400">
+                    {{-- <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SD-3.jpg') }}" alt="" width="600" height="400"> --}}
                     </div>
                  </div>
                  <div class="slide slide_4">
                     <div class="slide-content">
-                      <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SMP-1.jpg') }}" alt="" width="600" height="400">
+                      {{-- <img src="{{ asset('assets/frontend/img/Prestasi/Prestasi SMP-1.jpg') }}" alt="" width="600" height="400"> --}}
                     </div>
                  </div>
               </div>

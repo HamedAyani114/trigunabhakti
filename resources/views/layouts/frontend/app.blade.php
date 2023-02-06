@@ -45,9 +45,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="/"><span>Tri Guna Bhakti</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 class="text-light"><a href="/"><span><img src="{{ asset('images/logo/lg.png')}}" alt="" class="img-fluid" width="45" height="100"></a>  TRI GUNA BHAKTI</span></a></h1>
       </div>
 
     <!-- .navbar -->
@@ -73,19 +71,7 @@
       </div>
     </section> --}}
     <!-- End Blog Breadcrumb -->
-    <section class="sd bg-sd">
-      <div class="aos-init aos-animate" data-aos="fade-up">
-        {{-- <div class="row"> --}}
-          
-          <!-- Start blog entries list -->
-          
-          @yield('sd')
-          <!-- End blog entries list -->
-          
-          {{-- </div> --}}
-          
-        </div>
-      </section><!-- End Blog Section -->
+
     <!-- ======= Blog Entry ======= -->
     <section id="blog" class="blog">
       <div class="container aos-init aos-animate" data-aos="fade-up">

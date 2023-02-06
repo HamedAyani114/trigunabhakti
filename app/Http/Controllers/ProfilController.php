@@ -18,4 +18,8 @@ class ProfilController extends Controller
     {
         return view('frontend.profilesekolah.pendidikan');
     }
+    public function showSejarah()
+    {
+        return view('frontend.profilesekolah.sejarah');
+    }
 }
