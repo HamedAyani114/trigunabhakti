@@ -65,6 +65,7 @@ class PegawaiController extends Controller
         }
         $pegawai->nama = $request->nama;
         $pegawai->jabatan = $request->jabatan;
+        $pegawai->struktur = $request->struktur;
         $pegawai->jenis_kelamin = $request->jenis_kelamin;
         $pegawai->key_pegawai = $request->key_pegawai;
         $pegawai->save();
@@ -127,9 +128,12 @@ class PegawaiController extends Controller
             $foto = 'foto-'.uniqid().'.'.$file->getClientOriginalExtension();
             $file->move('images/pegawai/', $foto);
             $pegawai->foto = $foto;
+        }else{
+            $pegawai->foto = 'default.jpg';
         }
         $pegawai->nama = $request->nama;
         $pegawai->jabatan = $request->jabatan;
+        $pegawai->struktur = $request->struktur;
         $pegawai->jenis_kelamin = $request->jenis_kelamin;
         $pegawai->key_pegawai = $request->key_pegawai;
         $pegawai->update();
@@ -148,6 +152,6 @@ class PegawaiController extends Controller
         $destroy = Pegawai::where('id', $id);
         $destroy->delete();
         // return redirect(route("post.index"));
-        return back()->with('success', 'Pegawai deleted successfully');
+        return redirect()->route('pegawai.index')->with('success', 'Pegawai deleted successfully');
     }
 }

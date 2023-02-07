@@ -153,7 +153,7 @@ class UserController extends Controller
     public function resetpass($id)
     {
         $people = User::find($id);
-        $people->password = bcrypt('12345678');
+        $people->password = bcrypt('123456');
         $people->save();
         return redirect()->route('user.index')->withSuccess('Password Successfully');
     }

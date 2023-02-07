@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Album;
 use App\Models\Gallery;
 use App\Models\Post;
+use App\Models\Pegawai;
 
 class FrontendController extends Controller
 {
@@ -37,14 +38,20 @@ class FrontendController extends Controller
         $data = [
             'title' => 'Post Detail',
             'posts' => Post::where('post_type', '=', 'Blog')->where('category_id', '=', '1')->where('is_publish', '=', '1')->orderBy('created_at', 'desc')->limit(4)->get(),
-            'services' => Post::where('post_type', '=', 'Page')->where('category_id', '=', '2')->where('is_publish', '=', '1')->get(),
+            // 'services' => Post::where('post_type', '=', 'Page')->where('category_id', '=', '2')->where('is_publish', '=', '1')->get(),
         ];
         return view('frontend.home', $data);
     }
 
     public function showAbout()
     {
-        return view('frontend.about');
+        $data = [
+            // data pegawai
+            'ketuas'=> Pegawai::where('key_pegawai', 'yysn')->where('jabatan', 'Ketua')->get(),
+            'pegawais' => Pegawai::where('key_pegawai', 'yysn')->where('jabatan','!=', 'Ketua')->get(),
+        ];
+        // dd($data);
+        return view('frontend.about', $data);
     }
 
     // public function showservices()

@@ -16,8 +16,7 @@ class CategoryController extends Controller
     {
         $category=[
             'title'=>'List Category',
-            'categories'=> Category::Where('category_name', '<>', 'Services')->Where('category_name', '<>', 'Headline')->Where('category_name', '<>', 'Features')->get(),
-
+            'categories'=> Category::Where('category_name', '<>', 'Headline')->get(),
             'route' => route('category.create'),
         ];
         return view('admin.category.index', $category);

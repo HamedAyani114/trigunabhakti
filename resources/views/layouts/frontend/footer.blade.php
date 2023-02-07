@@ -1,4 +1,4 @@
-<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+<footer id="footer" {{-- data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="100" --}}>
 
 {{-- <div class="footer-newsletter">
   <div class="container">
@@ -31,7 +31,7 @@
         </ul>
       </div>
 
-      <div class="col-lg-3 col-md-6 footer-links">
+      <div class="col-lg-6 col-md-6 footer-links">
         <h4>Our Services</h4>
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -45,16 +45,17 @@
       <div class="col-lg-3 col-md-6 footer-contact">
         <h4>Contact Us</h4>
         <p>
-          A108 Adam Street <br>
-          New York, NY 535022<br>
-          United States <br><br>
-          <strong>Phone:</strong> +1 5589 55488 55<br>
-          <strong>Email:</strong> info@example.com<br>
+          Jl. Kyai Tambak Deres No.34, Bulak <br>
+          Kec. Bulak, Kota SBY, Jawa Timur <br>
+          60124 <br><br>
+
+          <strong>Phone:</strong>  031 - 51500309<br>
+          <strong>Email:</strong> yayasantrigunabhakti@gmail.com<br>
         </p>
 
       </div>
 
-      <div class="col-lg-3 col-md-6 footer-info">
+      {{-- <div class="col-lg-3 col-md-6 footer-info">
         <h3>About Moderna</h3>
         <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
         <div class="social-links mt-3">
@@ -63,22 +64,18 @@
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
-      </div>
+      </div> --}}
 
     </div>
   </div>
 </div>
 
-<div class="container">
+{{-- <div class="container">
   <div class="copyright">
-    {{-- &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved --}}
+    &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
   </div>
   <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-    {{-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> --}}
+
   </div>
-</div>
+</div> --}}
 </footer>
