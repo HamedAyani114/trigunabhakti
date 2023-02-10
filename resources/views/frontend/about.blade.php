@@ -56,7 +56,7 @@
         @endforeach
         
         @foreach ($pegawais as $pegawai)
-        <div class="col-lg-6 mt-3">
+        <div class="col-lg-4 mt-0">
           <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
             <div class="pic"><img src="{{ asset('images/pegawai/'.$pegawai->foto) }}" class="img-fluid" alt=""></div>
             <div class="member-info">
