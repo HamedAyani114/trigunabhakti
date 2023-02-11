@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 video-box">
-                    <img src="{{ asset('assets/frontend/img/about.jpg') }}" class="img-fluid" alt="">
+                    <img style="padding-top:10%;" src="{{ asset('assets/frontend/img/about.jpg') }}" width="500" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -41,8 +41,17 @@
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-fingerprint"></i></div>
                         <h4 class="title"><a href="">Sambutan Kepala Sekolah</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi corrupti vitae, ratione nihil deleniti totam ab soluta nesciunt neque nemo explicabo tenetur tempora nostrum voluptates aliquid magni adipisci sed.</p>
+                        <p style="font-weight:bold; margin-left:10px; "> Assalaamu’alaikum wr. wb.</p> 
+                        <p class="description">
+                          Pendidikan adalah proses membangun diri untuk masa depan bangsa dan agama, maka siapapun kita akan mendapat sukses besar pada masa depan dengan memulai pendidikan yang baik dan berkualias  bagi lingkungan kita, anak anak kita dan  warga sekitar kita. Bangsa yang maju adalah bangsa yang mengedepankan pendidikan berkualitas bagi rakyatnya, keluarga maju adalah keluarga yang mengedepankan pendidikan berkualitas bagi anggota keluarganya.
+                          Yayasan Tri Guna Bhakti sangat mengedepankan kualitas pendidikan bagi setiap anak bangsa yang meraih sukses besar dimasa depan.  Anak anak kita perlu belajar dan berlatih dalam lingkungan kondusif guna mengembangkan potensi diri, menghadapi persoalan kekinian yang membentuk kepribadian:
+                        </p>
+                        <p style="text-align:center;"><i>“mencetak SDM Indonesia yang unggul, humanis, cerdas dan mencetak pemimpin”</i></p>
+                        <p class="description">
+                          Saya ucapkan sukses untuk anak anakku di Yayasan Tri Guna Bhakti dalam urusan anda didunia, dan sukses juga untuk urusan akhirat kita semua. Amiiiin
+                          
+                        </p>
+                        <p style="font-weight:bold; margin-left:10px;"> Wassalaamu’alaikum wr.wb</p> 
                     </div>
 
                 </div>

@@ -711,11 +711,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
     background: #f3f8fa;
     border-radius: 6px;
     transition: 0.5s;
+    margin-left: -60px;
+    
 }
 .why-us .icon-box .icon i {
     color: #68a4c4;
@@ -728,7 +730,7 @@ section {
     color: #fff;
 }
 .why-us .icon-box .title {
-    margin-left: 95px;
+    margin-left: 10px;
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 18px;
@@ -742,7 +744,8 @@ section {
     color: #68a4c4;
 }
 .why-us .icon-box .description {
-    margin-left: 95px;
+    margin-left: 10px;
+    text-align: justify;
     line-height: 24px;
     font-size: 14px;
 }
@@ -860,7 +863,7 @@ section {
     margin-top: -4.5%;
 }
 .main-smp{
-    background: linear-gradient(rgba(14, 2S9, 52, 0.6), rgba(14, 29, 52, 0.8)), url('../img/bg-smp.jpg') center center;
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('../img/bg-smp.jpg') center center;
     background-size: cover;
     height: 100%;
     box-shadow: 0 5px 25px 0 rgba(118, 118, 118, 0.6);

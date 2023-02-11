@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-lg-6 video-box">
                     <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-                    <iframe width="100%" height="90%" src="https://www.youtube.com/embed/ZVhFzqe6KoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe style="padding-top:8%;" width="90%" height="90%" src="https://www.youtube.com/embed/ZVhFzqe6KoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div class="col-lg-6 d-flex flex-column justify-content-center p-5">

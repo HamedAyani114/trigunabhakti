@@ -17,9 +17,9 @@
         </ul>
       </li>
       <li><a class="{{ Route::is('fasilitas.show') ? 'active' : '' }}" href="{{ route('fasilitas.show') }}">Fasilitas </a></li>
-      <li><a class="{{ Route::is('blog.index') ? 'active' : '' }}" href="{{ route('blog.index') }}">Article </a></li>
+      <li><a class="{{ Route::is('blog.index') ? 'active' : '' }}" href="{{ route('blog.index') }}">Berita </a></li>
       <li><a class="{{ Route::is('gallery.show') ? 'active' : '' }}" href="{{ route('gallery.show') }}">Galeri</a></li>
-      <li><a class="{{ Route::is('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a></li>
+      <li><a class="{{ Route::is('about') ? 'active' : '' }}" href="{{ route('about') }}">Tentang</a></li>
       <li class="nav-item">
         @auth
         <li class="nav-item {{ request()->is('gallery')?'active':'' }}">
