@@ -5,7 +5,7 @@
 
     <article class="entry">
       <div class="entry-img">
-        <img src="../images/banners/{{ $post->banner }}" alt="" class="img-fluid">
+        <img src="../images/benner/{{ $post->banner }}" alt="" class="img-fluid">
       </div>
       <h2 class="entry-title">
         <a href="{{ $post->slug }}">{{ $post->title }}</a>

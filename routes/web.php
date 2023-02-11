@@ -56,7 +56,6 @@ Route::get('/blog/{id}', BlogController::class . '@showcat');
 Route::get('/cat/{id}', [PostController::class, 'showcat']);
 Route::get('/user/{id}', [PostController::class, 'showpost']);
 
-Route::get('/profile/show/{id}', [UserController::class, 'show'])->name('profile.show');
 
 Auth::routes();
 Auth::routes(['verify' => true]);
@@ -76,6 +75,7 @@ Route::get('/home', function () {
 // Start of the Admin Routes
 
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/profile/show/{id}', [UserController::class, 'show'])->name('profile.show');
     Route::prefix('admin')->group(function () {
         Route::prefix('todo')->group(function () {
             Route::get('/', [TodoController::class, 'index'])->name('todo.index');
@@ -180,4 +180,3 @@ Route::group(['middleware' => 'admin'], function () {
 // End of the Admin Routes
 
 // route fasilitas
-

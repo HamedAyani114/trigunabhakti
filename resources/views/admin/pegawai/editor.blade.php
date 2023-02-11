@@ -54,16 +54,35 @@
                                 </div>
 
                                 <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Struktur</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" name="struktur" class="form-control" value="{{ old('slug',$pegawai->struktur??'') }}">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">jenis_kelamin</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input type="text" name="jenis_kelamin" class="form-control" value="{{ old('excerpt', $pegawai->jenis_kelamin??'') }}">
+                                        {{-- <input type="text" name="jenis_kelamin" class="form-control" value="{{ old('excerpt', $pegawai->jenis_kelamin??'') }}"> --}}
+                                        <select class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+                                            <option value="">Pilih jenis kelamin</option>
+                                            <option value="Laki-laki" {{ old('excerpt', $pegawai->jenis_kelamin??'') == 'Laki-laki' ? 'selected' : '' }}>Laki-laki</option>
+                                            <option value="Perempuan" {{ old('excerpt', $pegawai->jenis_kelamin??'') == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Tenaga Pendidik</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input type="text" name="key_pegawai" class="form-control" value="{{ old('excerpt', $pegawai->key_pegawai??'') }}">
+                                        {{-- <input type="text" name="key_pegawai" class="form-control" value="{{ old('excerpt', $pegawai->key_pegawai??'') }}"> --}}
+                                        <select class="form-control" id="key_pegawai" name="key_pegawai">
+                                            <option value="">Pilih jenis Keterangan Pegawai</option>
+                                            <option value="yysn" {{ old('excerpt', $pegawai->key_pegawai??'') == 'yysn' ? 'selected' : '' }}>yysn</option>
+                                            <option value="sd" {{ old('excerpt', $pegawai->key_pegawai??'') == 'sd' ? 'selected' : '' }}>sd</option>
+                                            <option value="smp" {{ old('excerpt', $pegawai->key_pegawai??'') == 'smp' ? 'selected' : '' }}>smp</option>
+                                            <option value="smk" {{ old('excerpt', $pegawai->key_pegawai??'') == 'smk' ? 'selected' : '' }}>smk</option>
+                                        </select>
                                     </div>
                                 </div>
 

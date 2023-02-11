@@ -65,17 +65,26 @@ class PostController extends Controller
 
         $post = new Post;
         $user_id = auth()->user()->id;
-        $last = '1';
+        // $last = '1';
 
         if ($request->hasFile('banner')) {
             $file = $request->file('banner');
             $banner = 'banner-'.uniqid().'.'.$file->getClientOriginalExtension();
-            $file->move('images/banners/', $banner);
+            $file->move('images/benner/', $banner);
             $post->banner = $banner;
         } else {
             $post->banner = 'default.jpg';
         }
 
+        // if ($request->hasFile('banner')) {
+        //     $file = $request->file('banner');
+        //     $banner = 'banner-'.uniqid().'.'.$file->getClientOriginalExtension();
+        //     $file->move('images/banner/', $banner);
+        //     $post->banner = $banner;
+        // } else {
+        //         $post->banner = 'default.jpg';
+        //     }
+            
         $post->user_id = $user_id;
         $post->title = $request->title;
         $post->slug = $request->slug;
@@ -84,6 +93,7 @@ class PostController extends Controller
         $post->excerpt = $request->excerpt;
         $post->body = $request->body;
         $post->updated_by = $user_id;
+        // dd($post);
         $post->save();
         return redirect()->route('post.index')->with('success', 'Post has been created');
     }
