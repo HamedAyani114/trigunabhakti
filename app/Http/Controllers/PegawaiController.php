@@ -57,7 +57,7 @@ class PegawaiController extends Controller
 
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $foto = 'foto-'.uniqid().'.'.$file->getClientOriginalExtension();
+            $foto = time().'-'.$file->getClientOriginalName();
             $file->move('images/pegawai/', $foto);
             $pegawai->foto = $foto;
         } else {
@@ -125,7 +125,7 @@ class PegawaiController extends Controller
             if (file_exists(public_path('images/pegawai/'.$pegawai->foto))) {
                 unlink(public_path('images/pegawai/'.$pegawai->foto));
             }
-            $foto = 'foto-'.uniqid().'.'.$file->getClientOriginalExtension();
+            $foto = time().'-'.$file->getClientOriginalName();
             $file->move('images/pegawai/', $foto);
             $pegawai->foto = $foto;
         }else{
