@@ -53,15 +53,19 @@
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident</p>
+                        <h4 class="title"><a href="">Visi</a></h4>
+                        <p class="description" style="text-align: justify">Mewujudkan Lembaga Pendidikan yang Unggul dalam Melayani Umat di Bidang Sosial, Pendidikan dan Keagamaan untuk Membangun Sumber Daya Manusia (SDM) yang Berkarakter, Cerdas, Integritas dan Berakhlaq Mulia.</p>
+
                     </div>
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem mollitia dignissimos quod molestiae aspernatur rem incidunt consequuntur sapiente doloremque! Eaque laudantium, ex incidunt ea vel vitae minima repellendus temporibus atque quis aspernatur itaque distinctio obcaecati enim deserunt ipsum corrupti provident aperiam corporis nobis exercitationem delectus? Amet vero obcaecati expedita aspernatur dolore nostrum quod pariatur cupiditate, quas sequi rerum incidunt maxime natus similique cumque sunt esse nemo quia animi ea voluptates distinctio doloremque. Blanditiis animi delectus itaque? Ad, exercitationem cupiditate eaque quisquam soluta est nihil voluptas sunt nulla repudiandae corporis autem enim. Neque, ut non unde nisi error maiores suscipit placeat!</p>
+                        <h4 class="title"><a href="">Misi</a></h4>
+                        <p class="description" style="text-align: justify">
+                            1. Meningkatkan Pendidikan yang bermutu dan Pengajaran yang berkualitas
+                           <br> 2. Membangun Pusat Dakwah, Sosial dan Pendidikan yang Berbasis Pada Pemberdayaan Masyarakat.
+                           <br> 3. Menyelenggarakan Berbagai Layanan Sosial dalam Membantu Pemberdayaan Umat.
+                         </p>
                     </div>
 
                 </div>

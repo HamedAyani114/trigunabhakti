@@ -6,7 +6,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <h3>Sejarah</h3>
-              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Yayasan Pendidikan Tri Guna Bhakti Surabaya resmi berdiri pada tanggal 16 Oktober 2017</p>
               <a class="cta-btn" href="{{ route('sejarah') }}">Baca Selengkapnya</a>
             </div>
           </div>
@@ -14,7 +14,7 @@
       </section>
 @endsection
 
-@section('kurikulum')
+{{-- @section('kurikulum')
 <section id="kurikulum" class="kurikulum">
   <div class="container" data-aos="fade-up">
     <div class="row justify-content-center">
@@ -26,7 +26,7 @@
     </div>
   </div>    
 </section>
-@endsection
+@endsection --}}
 
 @section('content')
     <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="300">
@@ -40,7 +40,7 @@
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                        <h4 class="title"><a href="">Sambutan Kepala Sekolah</a></h4>
+                        <h4 class="title"><a href="">Sambutan Ketua Yayasan</a></h4>
                         <p style="font-weight:bold; margin-left:10px; "> Assalaamu’alaikum wr. wb.</p> 
                         <p class="description">
                           Pendidikan adalah proses membangun diri untuk masa depan bangsa dan agama, maka siapapun kita akan mendapat sukses besar pada masa depan dengan memulai pendidikan yang baik dan berkualias  bagi lingkungan kita, anak anak kita dan  warga sekitar kita. Bangsa yang maju adalah bangsa yang mengedepankan pendidikan berkualitas bagi rakyatnya, keluarga maju adalah keluarga yang mengedepankan pendidikan berkualitas bagi anggota keluarganya.
@@ -63,19 +63,23 @@
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>Visi Misi</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
             </div>
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-6">
                     <div class="icon-box">
                         <h4 class="title text-center">Visi</h4>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam est quam temporibus numquam, fugit minima reprehenderit! Saepe eius nostrum nesciunt debitis placeat illo accusamus mollitia obcaecati! Veritatis quasi rerum expedita aperiam, adipisci, optio eum voluptates illo ipsa quae sit illum architecto eius ratione maxime vel dignissimos? Reiciendis delectus obcaecati ullam ducimus fugiat cumque blanditiis optio facere excepturi eligendi odit, est velit voluptate recusandae. Delectus dicta repellat saepe dolorum minima magnam cum maxime eligendi amet veritatis eaque rem optio, natus maiores earum sed facere aut eos nisi molestias reprehenderit. Libero ut autem incidunt sint id sed! Soluta earum laborum doloribus?</p>
+                        <p class="description" style="text-align: justify">Mewujudkan Lembaga Pendidikan yang Unggul dalam Melayani Umat di Bidang Sosial, Pendidikan dan Keagamaan untuk Membangun Sumber Daya Manusia (SDM) yang Berkarakter, Cerdas, Integritas dan Berakhlaq Mulia.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="icon-box">
                         <h4 class="title text-center">Misi</h4>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam est quam temporibus numquam, fugit minima reprehenderit! Saepe eius nostrum nesciunt debitis placeat illo accusamus mollitia obcaecati! Veritatis quasi rerum expedita aperiam, adipisci, optio eum voluptates illo ipsa quae sit illum architecto eius ratione maxime vel dignissimos? Reiciendis delectus obcaecati ullam ducimus fugiat cumque blanditiis optio facere excepturi eligendi odit, est velit voluptate recusandae. Delectus dicta repellat saepe dolorum minima magnam cum maxime eligendi amet veritatis eaque rem optio, natus maiores earum sed facere aut eos nisi molestias reprehenderit. Libero ut autem incidunt sint id sed! Soluta earum laborum doloribus?</p>
+                        <p class="description" style="text-align: justify">
+                           1. Meningkatkan Pendidikan yang bermutu dan Pengajaran yang berkualitas
+                          <br> 2. Membangun Pusat Dakwah, Sosial dan Pendidikan yang Berbasis Pada Pemberdayaan Masyarakat.
+                          <br> 3. Menyelenggarakan Berbagai Layanan Sosial dalam Membantu Pemberdayaan Umat.
+                        </p>
                     </div>
                 </div>
             </div>

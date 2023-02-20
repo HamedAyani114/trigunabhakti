@@ -7,7 +7,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section-title"><h2>Sejarah Yayasan Tri Guna Bhakti</h2></div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum consequatur veniam illo sint incidunt dolorum distinctio! Excepturi quos repellat ex recusandae inventore impedit velit quo alias eveniet vero deleniti tempora, minima fuga, optio earum natus. Magnam omnis, tenetur accusamus natus quo, porro laboriosam recusandae eum est a obcaecati eos voluptatum ipsa repudiandae, accusantium inventore! Dolor vel ut laudantium accusantium, quasi minima voluptates, nobis ipsa quibusdam blanditiis assumenda eos. Amet nisi aut aspernatur eveniet quibusdam nesciunt? Eligendi saepe nesciunt enim cupiditate, sint blanditiis minus itaque nihil. Debitis esse, consectetur, perspiciatis delectus porro iste illum fuga repellat placeat exercitationem obcaecati quod.
+                        <p>
+                            Yayasan Pendidikan Tri Guna Bhakti Surabaya resmi berdiri pada tanggal 16 Oktober 2017 berlokasi di Jl. Kyai Tambak Deres No.34, Bulak, Kec. Bulak, Kota SBY, Jawa Timur 60124. 
+                            Oleh Ibu Suharnanik sebagai pendiri.
+                        </p>
+
                 </div>
                 </div>
             </div>
