@@ -131,7 +131,7 @@
                 {{-- pegawai where jabatan = kepsesk --}}
                 <h4>{{ $kepsek->nama }}</h4>
                 <span>{{ $kepsek->jabatan }}</span>
-                <p style="color: transparent">Explicabo voluptatem mollitia et repellat qui dolorum</p>
+                <p style="color: transparent">Explicabo voluptatem mollitia et repellat qui dolorum migas</p>
               </div>
             </div>
           </div>

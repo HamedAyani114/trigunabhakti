@@ -41,7 +41,9 @@
   <div class="container">
       <div class="row">
           <div class="col-lg-6 video-box">
-              <img style="padding-top:10%;" src="{{ asset('assets/frontend/img/about.jpg') }}" width="500" class="img-fluid" alt="">
+            @foreach ($kepseks as $kepsek)
+            <img style="padding-top:10%; padding-left:20%;padding-bottom:5%;" src="{{ asset('images/pegawai/'.$kepsek->foto) }}" width="520px" class="img-fluid" alt="">
+          @endforeach
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -103,226 +105,168 @@
     </div>
 </section>
 <hr>
-{{-- guru sd --}}
-<section id="team" class="team section-bg">
-    <div class="container" data-aos="fade-up">
+ <!-- ======= Team Section ======= -->
+ <section id="team" class="team section-bg">
+  <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <h2>Daftar Guru</h2>
-        <p>Berikut daftar nama guru SD Tri Guna Bhakti</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-12 mt-4 justify-content-center">
-          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-              <div class="social">
-                <a href=""><i class="ri-twitter-fill"></i></a>
-                <a href=""><i class="ri-facebook-fill"></i></a>
-                <a href=""><i class="ri-instagram-fill"></i></a>
-                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-4">
-          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-              <div class="social">
-                <a href=""><i class="ri-twitter-fill"></i></a>
-                <a href=""><i class="ri-facebook-fill"></i></a>
-                <a href=""><i class="ri-instagram-fill"></i></a>
-                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mt-4">
-          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-              <div class="social">
-                <a href=""><i class="ri-twitter-fill"></i></a>
-                <a href=""><i class="ri-facebook-fill"></i></a>
-                <a href=""><i class="ri-instagram-fill"></i></a>
-                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mt-4">
-          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-              <div class="social">
-                <a href=""><i class="ri-twitter-fill"></i></a>
-                <a href=""><i class="ri-facebook-fill"></i></a>
-                <a href=""><i class="ri-instagram-fill"></i></a>
-                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 mt-4">
-          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-              <div class="social">
-                <a href=""><i class="ri-twitter-fill"></i></a>
-                <a href=""><i class="ri-facebook-fill"></i></a>
-                <a href=""><i class="ri-instagram-fill"></i></a>
-                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="section-title">
+      <h2>Data Guru</h2>
+      <p>Berikut daftar guru SMK  Tri Guna Bhakti Surabaya</p>
     </div>
-  </section>
-  <!-- End Team Section -->
 
-  {{-- Detail sekolah --}}
-  <section id="faq" class="faq">
+    <div class="row">
 
-    <div class="container" data-aos="fade-up">
-
-      <header class="section-title">
-        <h2>Data Sekolah</h2>
-        <p>Jumlah data guru, tendik dan siswa</p>
-      </header>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- F.A.Q List 1-->
-          <div class="accordion accordion-flush" id="faqlist1">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                  <i class="fa-solid fa-chalkboard-user"></i>Data guru
-                </button>
-              </h2>
-              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                <div class="accordion-body">
-                  <table class="table table-striped table-hover">
-                    <tr>
-                      <th>#</th>
-                      <th>Guru</th>
-                      <th>Jumlah</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Guru Aktif</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Guru Tidak Aktif</td>
-                      <td></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
+      @foreach ($kepseks as $kepsek)
+          
+      <div class="col-lg-12 mt-0 d-flex justify-content-center">
+          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pic"><img src="{{ asset('images/pegawai/'.$kepsek->foto) }}" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              {{-- pegawai where jabatan = kepsesk --}}
+              <h4>{{ $kepsek->nama }}</h4>
+              <span>{{ $kepsek->jabatan }}</span>
+              <p style="color: transparent">Explicabo voluptatem mollitia et repellat qui dolorum migas</p>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                  <i class="fa-solid fa-user-group"></i> Data Tenaga didik
-                </button>
-              </h2>
-              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                <div class="accordion-body">
-                  <table class="table table-striped table-hover">
-                    <tr>
-                      <th>#</th>
-                      <th>Tenaga didik</th>
-                      <th>Jumlah</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Tenaga didik Aktif</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Tenaga didik Tidak Aktif</td>
-                      <td></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                  <i class="fa-solid fa-user-pen"></i> Data Siswa
-                </button>
-              </h2>
-              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                <div class="accordion-body">
-                  <table class="table table-striped table-hover">
-                    <tr>
-                      <th>#</th>
-                      <th>Siswa</th>
-                      <th>Jumlah</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Siswa Aktif</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Siswa tidak aktif</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Siswa dikeluarkan</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Siswa Laki-laki</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Siswa Perempuan</td>
-                      <td></td>
-                    </tr>
-                    
-                  </table>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
+      @endforeach
+      
+      @foreach ($pegawais as $pegawai)
+      <div class="col-lg-4 mt-0">
+        <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pic"><img src="{{ asset('images/pegawai/'.$pegawai->foto) }}" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>{{ $pegawai->nama }}</h4>
+            <span>{{ $pegawai->jabatan }}</span>
+            {{-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> --}}
+          </div>
+        </div>
+      </div>
+      @endforeach
 
-  </section><!-- End F.A.Q Section -->
+
+    </div>
+  </div>
+</section>
+<!-- End Team Section -->
+
+{{-- Detail sekolah --}}
+<section id="faq" class="faq">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-title">
+      <h2>Data Sekolah</h2>
+      <p>Jumlah data Tenaga Pendidik dan siswa</p>
+    </header>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- F.A.Q List 1-->
+        <div class="accordion accordion-flush" id="faqlist1">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                <i class="fa-solid fa-chalkboard-user"></i>Data Tenaga Pendidik
+              </button>
+            </h2>
+            <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+              <div class="accordion-body">
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <th>#</th>
+                    <th>Tenaga Pendidik</th>
+                    <th>Jumlah</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Tenaga Pendidik Aktif</td>
+                    <td>{{ $totalPegawaiSmk }}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {{-- <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                <i class="fa-solid fa-user-group"></i> Data Tenaga didik
+              </button>
+            </h2>
+            <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+              <div class="accordion-body">
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <th>#</th>
+                    <th>Tenaga didik</th>
+                    <th>Jumlah</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Tenaga didik Aktif</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Tenaga didik Tidak Aktif</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div> --}}
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                <i class="fa-solid fa-user-pen"></i> Data Siswa
+              </button>
+            </h2>
+            <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+              <div class="accordion-body">
+                <table class="table table-striped table-hover">
+                  <tr>
+                    <th>#</th>
+                    <th>Siswa</th>
+                    <th>Jumlah</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Siswa Aktif</td>
+                    <td>160</td>
+                  </tr>
+                  {{-- <tr>
+                    <td>2</td>
+                    <td>Siswa tidak aktif</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Siswa dikeluarkan</td>
+                    <td></td>
+                  </tr> --}}
+                  <tr>
+                    <td>2</td>
+                    <td>Siswa Laki-laki</td>
+                    <td>93</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Siswa Perempuan</td>
+                    <td>67</td>
+                  </tr>
+                  
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+</section>
+<!-- End detail smk -->
 
 
 @endsection

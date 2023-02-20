@@ -42,7 +42,7 @@ class PostController extends Controller
         $data = [
             'title' => 'New Post',
             'method' => 'POST',
-            'categories' => category::All(),
+            'categories' => Category::Where('category_name', '<>', 'Headline')->get(),
             'route' => route('post.store'),
             'poststatuses'=> PostStatus::All(),
         ];

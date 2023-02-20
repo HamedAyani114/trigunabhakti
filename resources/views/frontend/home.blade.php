@@ -3,7 +3,7 @@
 @section('content')
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="3700">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="2900">
 
         <!-- Slide 1 -->
         <?php
@@ -15,7 +15,7 @@
                 <h2 class="animate__animated animate__fadeInDown">{{ $post->title }}</span></h2>
                 <p class="animate__animated animate__fadeInUp">{{ $post->excerpt }}</p>
                 </p>
-                <a href="/blog/{{ $post->slug }}" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                {{-- <a href="/blog/{{ $post->slug }}" class="btn-get-started animate__animated animate__fadeInUp">Read More</a> --}}
             </div>
         </div>
         <?php
@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 video-box">
-                    <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
+                    <img src="" class="img-fluid" alt="">
                     <iframe width="100%" height="90%" src="https://www.youtube.com/embed/ZVhFzqe6KoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
@@ -54,7 +54,7 @@
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-fingerprint"></i></div>
                         <h4 class="title"><a href="">Visi</a></h4>
-                        <p class="description" style="text-align: justify">Mewujudkan Lembaga Pendidikan yang Unggul dalam Melayani Umat di Bidang Sosial, Pendidikan dan Keagamaan untuk Membangun Sumber Daya Manusia (SDM) yang Berkarakter, Cerdas, Integritas dan Berakhlaq Mulia.</p>
+                        <p class="description" style="text-align: justify;">Mewujudkan Lembaga Pendidikan yang Unggul dalam Melayani Umat di Bidang Sosial, Pendidikan dan Keagamaan untuk Membangun Sumber Daya Manusia (SDM) yang Berkarakter, Cerdas, Integritas dan Berakhlaq Mulia.</p>
 
                     </div>
 

@@ -5,8 +5,9 @@
 <section class="about aos-init aos-animate" data-aos="fade-up">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <img src="../asset/frontend/img/teamwork.jpg" class="img-fluid" alt="">
+        <div class="col-lg-6 video-box">
+          <img src="" class="img-fluid" alt="">
+          <iframe width="99%" height="90%" src="https://www.youtube.com/embed/4A0cGrYw5jI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
           <h3>Tri Guna Bhakti</h3>
