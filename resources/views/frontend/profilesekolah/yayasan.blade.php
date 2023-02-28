@@ -88,7 +88,7 @@
     <section id="programUnggulan" class="programUnggulan">
         <div class="section-title">
             <h2>Program Unggulan</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>Terdapat program unggulan yang ada pada YAyasan Tri Guna Bhakti sebagi berikut</p>
         </div>
         <section id="featured-services" class="featured-services">
             <div class="container">
@@ -96,10 +96,10 @@
               <div class="row gy-4">
       
                 <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-                  <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+                  <div class="icon flex-shrink-0"><i class="fa-solid fa-book"></i></div>
                   <div>
                     <h4 class="title">English Class</h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    <p class="description">Memeberikan pemahaman lebih berbahasa inggris kepada siswa-siswi. </p>
                   </div>
                 </div>
                 <!-- End Service Item -->
@@ -108,15 +108,15 @@
                   <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
                   <div>
                     <h4 class="title">Kelas Mengaji</h4>
-                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    <p class="description">Untuk menjadikan siswa siswi lebih bertaqwa kepada Tuhan YME. dengan adanya kelas mengaji. Lebih memahami bacaan dan tajwid dalam membaca Al-Qur'an.</p>
                   </div>
                 </div><!-- End Service Item -->
       
                 <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                  <div class="icon flex-shrink-0"><i class="fa-solid fa-fire"></i></div>
                   <div>
                     <h4 class="title">Pramuka</h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    <p class="description">Menumbuhkan jiwa pramuka kepada siswa-siswi.</p>
                   </div>
                 </div><!-- End Service Item -->
       

@@ -91,7 +91,7 @@
                     <h2>VISI</h2>
                 </div>
                 <div class="visimisi">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cupiditate doloribus, modi molestias veniam vel, dolore perferendis, eum debitis reprehenderit neque magni tenetur natus saepe corrupti aliquam nobis dolorem beatae?
+                  Berprestasi, Berimtaq mengutamakan akhlak dan budi pekerti luhur serta cinta terhadap lingkungan.
                 </div>
             </div>
             <div class="col-12">
@@ -100,10 +100,12 @@
                 </div>
                 <div class="visimisi">
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, doloribus?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, doloribus?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, doloribus?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, doloribus?</li>
+                        <li>Terwujudnya pengembangan tenaga pendidik yang professional</li>
+                        <li>Terwujudnya strategi pembelajaran dengan dukungan metode dan sumber bahan belajar yang selaras dan mutakhir.</li>
+                         <li> Terwujudnya Sekolah Ramah Anak ( SRA ) dan Membudayakan sikap 5 S Senyum,Sapa,Salam,Sopan dan Santun di sekolah.</li>
+                        <li>Terwujudnya pengembangan sarana dan prasarana pendidikan yang memadai.</li>
+                        <li>Terwujudnya pencapaian standar ketuntasan dan kelulusan pembelajaran.</li>
+                        <li>Terwujudnya anak didik yang peduli terhadap lingkungan dan berakhlak mulia.</li>
                     </ul>
                 </div>
             </div>

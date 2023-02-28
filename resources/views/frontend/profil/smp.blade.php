@@ -86,7 +86,7 @@
                     <h2>VISI</h2>
                 </div>
                 <div class="visimisi">
-                  Menjadi SMK yang berkualitas , profesional dan berkarakter untuk masa depan yang cemerlang
+                  Terwujudnya SMP Tri Guna Bhakti Surabaya sebagai sekolah unggul, yang menghasilkan lulusan berkualitas : cerdas, kreatif, santun dan agamis, serta berwawasan global.
                 </div>
             </div>
             <div class="col-12">
@@ -95,9 +95,9 @@
                 </div>
                 <div class="visimisi">
                     <ul>
-                      <li>1. Memberikan layanan yang profesional bagi peserta didik</li> 
-                      <li>2. Mencetak lulusan yang profesional dibidang bisnis dan manajemen</li> 
-                      <li>3. Mencetak lulusan yang berkarakter.</li>
+                      <li>Mewujudkan SMP Tri Guna Bhakti Surabaya sebagai lingkungan yang kondusif untuk kegiatan pendidikan dan pembelajaran yang berbasis TI, berwawasan lingkungan dan religius.</li> 
+                      <li>Mengoptimalkan sumber daya yang ada untuk memberikan pelayanan pendidikan yang terbaik kepada siswa agar sukses dalam memasuki pendidikan tinggi baik di tingkat regional, nasional maupun global.</li> 
+                      <li>Mengembangkan seluruh potensi siswa agar menjadi manusia Indonesia yang memiliki IMTAQ, menguasai IPTEK, berbudi dan peduli</li>
                     </ul>
                 </div>
             </div>

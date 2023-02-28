@@ -23,22 +23,21 @@
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('dashboard.index') }}">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('yayasan') }}">Profil yayasan</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('fasilitas.show') }}">Fasilitas</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blog.index') }}">Berita</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('gallery.show') }}">Geleri</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">Tentang</a></li>
         </ul>
       </div>
 
       <div class="col-lg-6 col-md-6 footer-links">
-        <h4>Our Services</h4>
+        <h4>Profile</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">SD TRI GUNA BHAKTI</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">SMP TRI GUNA BHAKTI</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">SMA TRI GUNA BHAKTI</a></li>
         </ul>
       </div>
 
