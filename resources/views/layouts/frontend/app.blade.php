@@ -1,5 +1,6 @@
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -13,7 +14,9 @@
   <link href="../assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&amp;display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../assets/frontend/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -25,7 +28,9 @@
   <link href="../assets/frontend/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   {{-- Font awesome --}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS File -->
   <link href="../assets/frontend/css/style.css" rel="stylesheet">
@@ -45,12 +50,13 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="/"><span><img src="{{ asset('images/logo/lg.png')}}" alt="" class="img-fluid" width="45" height="100"></a>  TRI GUNA BHAKTI</span></a></h1>
+        <h1 class="text-light"><a href="/"><span><img src="{{ asset('images/logo/lg.png')}}" alt="" class="img-fluid"
+                width="45" height="100"></a> TRI GUNA BHAKTI</span></a></h1>
       </div>
 
-    <!-- .navbar -->
-    @include('layouts.frontend.nav')
-    <!-- .navbar -->
+      <!-- .navbar -->
+      @include('layouts.frontend.nav')
+      <!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -121,10 +127,12 @@
   @include('layouts.frontend.footer')
   <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/frontend/vendor/purecounter/purecounter.js"></script>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <script src="assets/frontend/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/vendor/purecounter/purecounter.js"></script>
   <script src="../assets/frontend/vendor/aos/aos.js"></script>
   <script src="../assets/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -137,10 +145,12 @@
   <!-- Template Main JS File -->
   <script src="../assets/frontend/js/main.js"></script>
 
-  <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+  <script>
+    if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } 
+  </script>
   <script src="../assets/frontend/magnific-popup/jquery.magnific-popup.min.js?v=1"></script>
-    <script>
-        $(document).ready(function() {
+  <script>
+    $(document).ready(function() {
         $('.popup-image').magnificPopup({
         type: 'image',
         closeOnContentClick: true,
@@ -150,5 +160,7 @@
             }
             });
         });
-    </script>
-</body></html>
+  </script>
+</body>
+
+</html>

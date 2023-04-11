@@ -51,7 +51,7 @@
                                             <td>{{ $gallery->album->album_name }}</td>
                                             <td>{{ $gallery->title }}</td>
                                             <td>
-                                                <img src="{{ asset('/assets/gallery/'.$gallery->picture) }}" style="max-height: 150px" alt="" class="img-thumbnail">
+                                                <img src="{{ asset('/images/gallery/'.$gallery->picture) }}" style="max-height: 150px" alt="" class="img-thumbnail">
                                             </td>
                                             <td>
                                                 {!! $gallery->description !!}

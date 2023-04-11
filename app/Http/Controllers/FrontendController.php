@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\Album;
@@ -16,7 +17,7 @@ class FrontendController extends Controller
     public function showgallery()
     {
         $data = [
-            'galleries' => Gallery::orderBy('created_at', 'desc')->paginate(15),
+            'galleries' => Gallery::orderBy('created_at', 'desc')->paginate(21),
             'albums' => Album::get(),
         ];
         return view('frontend.gallery', $data);
@@ -25,10 +26,10 @@ class FrontendController extends Controller
     public function prestasiSekolah()
     {
         $data = [
-            'galleries' =>Gallery::select('title', 'picture', 'album_name', 'album_id')
-            ->join('albums', 'galleries.album_id', '=', 'albums.id')
-            ->where('album_name', 'Prestasi')
-            ->get(),
+            'galleries' => Gallery::select('title', 'picture', 'album_name', 'album_id')
+                ->join('albums', 'galleries.album_id', '=', 'albums.id')
+                ->where('album_name', 'Prestasi')
+                ->get(),
             'albums' => Album::get(),
         ];
         return view('frontend.home', $data);
@@ -47,8 +48,8 @@ class FrontendController extends Controller
     {
         $data = [
             // data pegawai
-            'ketuas'=> Pegawai::where('key_pegawai', 'yysn')->where('jabatan', 'Ketua')->get(),
-            'pegawais' => Pegawai::where('key_pegawai', 'yysn')->where('jabatan','!=', 'Ketua')->get(),
+            'ketuas' => Pegawai::where('key_pegawai', 'yysn')->where('jabatan', 'Ketua')->get(),
+            'pegawais' => Pegawai::where('key_pegawai', 'yysn')->where('jabatan', '!=', 'Ketua')->get(),
         ];
         // dd($data);
         return view('frontend.about', $data);

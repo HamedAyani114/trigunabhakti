@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\Album;
@@ -50,10 +51,10 @@ class GalleryController extends Controller
             'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
         $picture = $request->file('picture');
-        $name = uniqid().'.'.$picture->getClientOriginalExtension();
-        $picture->move('assets/gallery/', $name);
+        $name = uniqid() . '.' . $picture->getClientOriginalExtension();
+        $picture->move('images/gallery/', $name);
         $validate['picture'] = $name;
-//        dd($request);
+        //        dd($request);
         Gallery::create($validate);
 
         return redirect()->route('gallery.index')->withSuccess('Success add galery');
@@ -103,12 +104,12 @@ class GalleryController extends Controller
             'picture' => 'sometimes|image'
         ]);
         if ($request->hasFile('picture')) {
-            if (file_exists(public_path('assets/gallery/'.$galleries->picture))) {
-                unlink(public_path('assets/gallery/'.$galleries->picture));
+            if (file_exists(public_path('images/gallery/' . $galleries->picture))) {
+                unlink(public_path('images/gallery/' . $galleries->picture));
             }
             $picture = $request->file('picture');
-            $name = uniqid().'.'.$picture->getClientOriginalExtension();
-            $picture->move('assets/gallery/', $name);
+            $name = uniqid() . '.' . $picture->getClientOriginalExtension();
+            $picture->move('images/gallery/', $name);
             $validate['picture'] = $name;
         }
         $galleries->update($validate);

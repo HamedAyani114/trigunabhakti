@@ -28,7 +28,9 @@
                         </div>
                         <form action="{{ $route }}" method="POST" enctype="multipart/form-data">
                             <div class="d-flex justify-content-center">
-                                <img id="preview-img" src="{{ asset('assets/gallery/'.($gallery->picture??'img.jpg')) }}" style="max-height: 150px" alt="" class="img-thumbnail">
+                                <img id="preview-img"
+                                    src="{{ asset('images/gallery/'.($gallery->picture??'img.jpg')) }}"
+                                    style="max-height: 150px" alt="" class="img-thumbnail">
                             </div>
                             @csrf
                             @method($method)
@@ -36,17 +38,22 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Picture</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input type="file" name="picture" class="form-control @error('picture') is-invalid @enderror" value="{{ old('picture', $gallery->picture??'') }}">
+                                        <input type="file" name="picture"
+                                            class="form-control @error('picture') is-invalid @enderror"
+                                            value="{{ old('picture', $gallery->picture??'') }}">
                                         @error('picture') <div class="invalid-feedback">{{ $message }}</div> @enderror
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Album Name</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Album
+                                        Name</label>
                                     <div class="col-sm-12 col-md-7">
                                         <select name="album_id" id="album_id" class="form-control" required autofocus>
                                             <option value="">Select Album</option>
                                             @foreach($albums as $album)
-                                            <option value="{{ $album->id }}" {{ old('album', $gallery->album_id??'')==$album->id?'selected':'' }}>{{ $album->album_name }}</option>
+                                            <option value="{{ $album->id }}" {{ old('album', $gallery->
+                                                album_id??'')==$album->id?'selected':'' }}>{{ $album->album_name }}
+                                            </option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -54,15 +61,21 @@
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" value="{{ old('title', $gallery->title??'') }}">
+                                        <input type="text" name="title"
+                                            class="form-control @error('title') is-invalid @enderror"
+                                            value="{{ old('title', $gallery->title??'') }}">
                                         @error('title') <div class="invalid-feedback">{{ $message }}</div> @enderror
                                     </div>
                                 </div>
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description</label>
+                                    <label
+                                        class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Description</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <textarea name="description" class="form-control @error('description') is-invalid @enderror" style="min-height: 100px">{{ old('description', $gallery->description??'') }}</textarea>
-                                        @error('description') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                                        <textarea name="description"
+                                            class="form-control @error('description') is-invalid @enderror"
+                                            style="min-height: 100px">{{ old('description', $gallery->description??'') }}</textarea>
+                                        @error('description') <div class="invalid-feedback">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -72,24 +85,24 @@
                                     <button class="btn btn-primary">Save</button>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                     </form>
                 </div>
             </div>
         </div>
-    </form>
+        </form>
 </div>
 </section>
 </div>
 @endsection
 
 @section('script')
-    <script>
-        $('input[name=picture]').on('change', function(){
+<script>
+    $('input[name=picture]').on('change', function(){
             const [file] = $(this)[0].files;
             if(file){
                 $('#preview-img').attr('src', URL.createObjectURL(file));
             }
         })
-    </script>
+</script>
 @endsection

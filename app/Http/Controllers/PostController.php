@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\Category;
@@ -17,14 +18,14 @@ class PostController extends Controller
     {
         if (auth()->user()->role == 'member' || auth()->user()->role == 'admin') {
             $post = [
-                'title'=>'List Post',
-                'posts'=> Post::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get(),
+                'title' => 'List Post',
+                'posts' => Post::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get(),
                 'route' => route('post.create'),
             ];
         } else {
-            $post=[
-                'title'=>'List Post',
-                'posts'=> Post::orderBy('created_at', 'desc')->get(),
+            $post = [
+                'title' => 'List Post',
+                'posts' => Post::orderBy('created_at', 'desc')->get(),
                 'route' => route('post.create'),
             ];
         }
@@ -44,7 +45,7 @@ class PostController extends Controller
             'method' => 'POST',
             'categories' => Category::Where('category_name', '<>', 'Headline')->get(),
             'route' => route('post.store'),
-            'poststatuses'=> PostStatus::All(),
+            'poststatuses' => PostStatus::All(),
         ];
         return view('admin.post.editor', $data);
     }
@@ -69,7 +70,7 @@ class PostController extends Controller
 
         if ($request->hasFile('banner')) {
             $file = $request->file('banner');
-            $banner = 'banner-'.uniqid().'.'.$file->getClientOriginalExtension();
+            $banner = 'banner-' . uniqid() . '.' . $file->getClientOriginalExtension();
             $file->move('images/benner/', $banner);
             $post->banner = $banner;
         } else {
@@ -84,7 +85,7 @@ class PostController extends Controller
         // } else {
         //         $post->banner = 'default.jpg';
         //     }
-            
+
         $post->user_id = $user_id;
         $post->title = $request->title;
         $post->slug = $request->slug;
@@ -92,6 +93,7 @@ class PostController extends Controller
         $post->category_id = $request->category;
         $post->excerpt = $request->excerpt;
         $post->body = $request->body;
+        $post->is_publish = $request->status;
         $post->updated_by = $user_id;
         // dd($post);
         $post->save();
@@ -128,7 +130,7 @@ class PostController extends Controller
             'route' => route('post.update', $id),
             'post' => Post::where('id', $id)->first(),
             'categories' => Category::get(),
-            'poststatuses'=> PostStatus::All(),
+            'poststatuses' => PostStatus::All(),
         ];
         return view('admin.post.editor', $data);
     }
@@ -152,10 +154,10 @@ class PostController extends Controller
 
         if ($request->hasFile('banner')) {
             $file = $request->file('banner');
-            if (file_exists(public_path('images/banners/'.$post->banner))) {
-                unlink(public_path('images/banners/'.$post->banner));
+            if (file_exists(public_path('images/banners/' . $post->banner))) {
+                unlink(public_path('images/banners/' . $post->banner));
             }
-            $banner = 'banner'.uniqid().'.'.$file->getClientOriginalExtension();
+            $banner = 'banner' . uniqid() . '.' . $file->getClientOriginalExtension();
             $file->move('images/banners/', $banner);
             $post->banner = $banner;
         }

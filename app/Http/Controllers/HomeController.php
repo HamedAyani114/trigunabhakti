@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\Category;
@@ -31,18 +32,18 @@ class HomeController extends Controller
     {
         if ((auth()->user()->role == 'admin')) {
             $data = [
-                'users'=>User::count(),
-                'category'=>Category::count(),
-                'article'=>Post::count(),
-                'comments'=>Comment::count(),
+                'users' => User::count(),
+                'category' => Category::count(),
+                'article' => Post::count(),
+                'comments' => Comment::count(),
                 'todos'  => Todo::All(),
             ];
         } else {
             $data = [
-                'users'=>User::count(),
-                'category'=>Category::count(),
-                'article'=>Post::count(),
-                'comments'=>Comment::count(),
+                'users' => User::count(),
+                'category' => Category::count(),
+                'article' => Post::count(),
+                'comments' => Comment::count(),
                 'todos'  => Todo::where('assigned_to', auth()->user()->id)->get(),
             ];
         }
@@ -51,7 +52,7 @@ class HomeController extends Controller
 
     public function showChangePasswordGet()
     {
-        $data=[
+        $data = [
             'title' => 'Change Password',
         ];
         return view('admin.user.change-password', $data);
