@@ -28,7 +28,7 @@
       </div>
       <div class="col-lg-6 col-sm-12 text-center">
         <div class="logo">
-          <img src="{{ asset('images/logo/logo-smk.png') }}" alt="" width="60%">
+          <img src="{{ asset('images/logo/logo-smp.jpeg') }}" alt="" width="60%">
         </div>
       </div>
     </div>

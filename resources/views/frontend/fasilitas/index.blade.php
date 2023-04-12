@@ -9,7 +9,8 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <img src="{{ asset('assets/frontend/img/tes1.jpg') }}" alt="" width="100%">
+                <img style="padding-inline: 5%; padding-bottom:5%" src="{{ asset('images/gallery/fasilitas.jpeg') }}"
+                    alt="" width="100%">
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="section-body">
