@@ -50,12 +50,13 @@
             <strong>Phone:</strong> 031 - 51500309<br>
             <strong>Email:</strong> yayasantrigunabhakti@gmail.com<br><br>
             <strong>Social Media: </strong> <br>
-            <strong><a style="padding-right:10px;" href="https://instagram.com/trigunabhakti.ofc?igshid=YmMyMTA2M2Y=">
+            <strong><a style="padding-right:10px;" href="https://instagram.com/trigunabhakti.ofc?igshid=YmMyMTA2M2Y="
+                target="_blank">
                 <i style="font-size:22px;" class="fa-brands fa-instagram"></i></a></strong>
             <strong><a style="padding-right:10px;" href="#"> <i style="font-size:22px;"
                   class="fa-brands fa-twitter"></i></a></strong>
-            <strong><a style="padding-right:10px;" href="https://www.facebook.com/profile.php?id=100089912815887"> <i
-                  style="font-size:22px;" class="fa-brands fa-facebook"></i></a></strong>
+            <strong><a style="padding-right:10px;" href="https://www.facebook.com/profile.php?id=100089912815887"
+                target="_blank" > <i style="font-size:22px;" class="fa-brands fa-facebook"></i></a></strong>
           </p>
 
         </div>
