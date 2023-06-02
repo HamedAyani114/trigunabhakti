@@ -150,16 +150,6 @@ Route::group(['middleware' => 'admin'], function () {
             Route::get('/changerole/{id}', [UserController::class, 'changerole'])->name('user.changerole');
             Route::put('/updaterole/{id}', [UserController::class, 'updaterole'])->name('user.updaterole');
         });
-        // Route::prefix('todo')->group(function () {
-        //     Route::get('/', [TodoController::class, 'index'])->name('todo.index');
-        //     Route::get('/create', [TodoController::class, 'create'])->name('todo.create');
-        //     Route::post('/store', [TodoController::class, 'store'])->name('todo.store');
-        //     Route::get('/edit/{id}', [TodoController::class, 'edit'])->name('todo.edit');
-        //     Route::get('/show/{id}', [TodoController::class, 'show'])->name('todo.show');
-        //     Route::put('/update/{id}', [TodoController::class, 'update'])->name('todo.update');
-        //     Route::delete('/delete/{id}', [TodoController::class, 'destroy'])->name('todo.destroy');
-        //     Route::get('/status/{id}', [TodoController::class, 'status'])->name('todo.status');
-        // });
 
         Route::prefix('album')->group(function () {
             Route::get('/', [AlbumController::class, 'index'])->name('album.index');
